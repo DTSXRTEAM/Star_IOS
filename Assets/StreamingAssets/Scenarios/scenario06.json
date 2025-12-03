@@ -1,0 +1,166 @@
+[
+	{
+		"identifier": "TankCover_02_GRP",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "oil-cap",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "oil-cap",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					},
+					{
+						"title": "Replace lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "oil-cap",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "oil-cap",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "TankCover_02_Base",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Add 100L oil",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "oil-cap",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "incr20",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Add 50L oil",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "oil-cap",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "incr10",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Add 25L oil",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "oil-cap",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "incr05",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Remove 25L oil",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "oil-cap",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "decr05",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Remove 50L oil",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "oil-cap",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "decr10",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Remove 100L oil",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "oil-cap",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "decr20",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: f1804b56e1079734c8e1f80eaca9df20
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Aktiv Grotesk
+  fontNames:
+  - Aktiv Grotesk
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 60f80834a4d7ca640b43618daf8518fb, type: 3}
+  - {fileID: 12800000, guid: 0bdb9b94814009b4b9032c9b3bfe9406, type: 3}
+  - {fileID: 12800000, guid: d9e1f8c47014b3a4e80acf3797b9b0c4, type: 3}
+  - {fileID: 12800000, guid: 891519da3c63fb247b21e9e516bdb700, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

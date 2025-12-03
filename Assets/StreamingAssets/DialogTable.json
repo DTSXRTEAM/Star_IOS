@@ -1,0 +1,607 @@
+[
+	{
+		"Id": 10,
+		"HeaderText": "CAUTION",
+		"BodyText": "Whilst conducting this task in a ‘Live’ turbine, you will come into contact with Hydraulic Fluid.\n\nBefore carrying out this task, you must read and understand the appropriate Risk Assessment and COSHH Sheet for working with Hydraulic Fluid\n<b>HYDOIL MOB DTE10 EXL32</b>",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 11,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou have spilled oil on the nacelle floor.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 12,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nThe lid was not fitted to the sample bottle before you shook it.\nYou have spilled oil over you and your colleague and on the nacelle floor.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 13,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou have overflowed the bottle and spilled oil on the nacelle floor.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 14,
+		"HeaderText": "DANGER",
+		"BodyText": "You are about to attach a hose without setting the right pressure, .\nThis is a serious safety breach and potentially very dangerous.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 19,
+		"HeaderText": "Final tasks",
+		"BodyText": "The sample bottle label should be completed with all of the relevant turbine information and returned to shore.\n\nAll spills should be cleaned thoroughly.\n\nAll oil contaminated materials should be disposed of as contaminated waste.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ],
+		"Type": "Success"
+	},
+	{
+		"Id": 20,
+		"HeaderText": "CAUTION",
+		"BodyText": "Whilst conducting this task in a ‘Live’ turbine, you will come into contact with Hydraulic Fluid.\n\nBefore carrying out this task, you must read and understand the appropriate Risk Assessment and COSHH Sheet for working with Hydraulic Fluid\n<b>HYDOIL MOB DTE10 EXL32</b>",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 21,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou have overflowed the tank and spilled oil on the nacelle floor.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 22,
+		"HeaderText": "Isolation",
+		"BodyText": "You are now in safe mode.\nRememeber to execute following tasks.\n\n1.<indent=5%>Apply rotor lock</indent>\n2.<indent=5%>Turn Hub access switch to Service Mode</indent>\n3.<indent=5%>Wait for the flashing orange light to turn solid</indent>\n4.<indent=5%>Close the Pitch Block Ball Valves</indent>\n5.<indent=5%>Check for a solid green light on the Hub Controller Cabinet</indent>\n6.<indent=5%>Confirm Hub Safe Active – HMI 11.99A</indent>\n<indent=5%>The text on this screen will need to say True, True, Active</indent>",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 29,
+		"HeaderText": "Final tasks",
+		"BodyText": "The hydraulic system should be leak checked before returning the turbine to operation.\n\nAll spills should be cleaned thoroughly.\n\nAll oil contaminated materials should be disposed of as contaminated waste.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ],
+		"Type": "Success"
+	},
+	{
+		"Id": 30,
+		"HeaderText": "CAUTION",
+		"BodyText": "Whilst conducting this task in a ‘Live’ turbine, you will come into contact with Hydraulic Fluid.\n\nBefore carrying out this task, you must read and understand the appropriate Risk Assessment and COSHH Sheet for working with Hydraulic Fluid\n<b>HYDOIL MOB DTE10 EXL32</b>",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 31,
+		"HeaderText": "DANGER",
+		"BodyText": "You are about to disassemble this component without the correct Point of Isolation in place.\nThis is a serious safety breach and potentially very dangerous.\n\nRead the Service Instruction carefully and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 32,
+		"HeaderText": "Isolation",
+		"BodyText": "You are now in safe mode.\nRememeber to execute following tasks.\n\n1.<indent=5%>Apply rotor lock</indent>\n2.<indent=5%>Turn Hub access switch to Service Mode</indent>\n3.<indent=5%>Wait for the flashing orange light to turn solid</indent>\n4.<indent=5%>Close the Pitch Block Ball Valves</indent>\n5.<indent=5%>Check for a solid green light on the Hub Controller Cabinet</indent>\n6.<indent=5%>Confirm Hub Safe Active – HMI 11.99A</indent>\n<indent=5%>The text on this screen will need to say True, True, Active</indent>",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 33,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou have not put the hub in safemode and spilled oil on the nacelle floor.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 39,
+		"HeaderText": "Final tasks",
+		"BodyText": "The hydraulic system should be leak checked before returning the turbine to operation.\n\nAll spills should be cleaned thoroughly.\n\nAll oil contaminated materials should be disposed of as contaminated waste.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ],
+		"Type": "Success"
+	},
+	{
+		"Id": 40,
+		"HeaderText": "CAUTION",
+		"BodyText": "Whilst conducting this task in a ‘Live’ turbine, you will come into contact with Hydraulic Fluid.\n\nBefore carrying out this task, you must read and understand the appropriate Risk Assessment and COSHH Sheet for working with Hydraulic Fluid\n<b>HYDOIL MOB DTE10 EXL32</b>",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 41,
+		"HeaderText": "DANGER",
+		"BodyText": "You are about to disassemble this component without the correct Point of Isolation in place.\nThis is a serious safety breach and potentially very dangerous.\n\nRead the Service Instruction carefully and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 42,
+		"HeaderText": "Isolation",
+		"BodyText": "You are now in safe mode.\nRememeber to execute following tasks.\n\n1.<indent=5%>Apply rotor lock</indent>\n2.<indent=5%>Turn Hub access switch to Service Mode</indent>\n3.<indent=5%>Wait for the flashing orange light to turn solid</indent>\n4.<indent=5%>Close the Pitch Block Ball Valves</indent>\n5.<indent=5%>Check for a solid green light on the Hub Controller Cabinet</indent>\n6.<indent=5%>Confirm Hub Safe Active – HMI 11.99A</indent>\n<indent=5%>The text on this screen will need to say True, True, Active</indent>",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 43,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou have not put the hub in safemode and spilled oil on the nacelle floor.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 49,
+		"HeaderText": "Final tasks",
+		"BodyText": "The hydraulic system should be leak checked before returning the turbine to operation. See the Hydraulic SII for further instructions.\n\nAll spills should be cleaned thoroughly.\n\nAll oil contaminated materials should be disposed of as contaminated waste",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ],
+		"Type": "Success"
+	},
+	{
+		"Id": 50,
+		"HeaderText": "CAUTION",
+		"BodyText": "Whilst conducting this task in a ‘Live’ turbine, you will come into contact with Gear Oil.\n\nBefore carrying out this task, you must read and understand the appropriate Risk Assessment and COSHH Sheet for working with Gear Oil.\n<b>Mobilgear SHC XMP 320</b>",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 51,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou have not isolated the breakers or replaced covers and spilled oil on the nacelle floor.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 52,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou have overflowed the bottle and spilled oil on the nacelle floor.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 53,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nThe lid was not fitted to the sample bottle before you shook it.\nYou have spilled oil over you and your colleague and on the nacelle floor.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 59,
+		"HeaderText": "Final tasks",
+		"BodyText": "The sample bottle label should be completed with all of the relevant turbine information and returned to shore.\n\nAll spills should be cleaned thoroughly.\n\nAll oil contaminated materials should be disposed of as contaminated waste.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ],
+		"Type": "Success"
+	},
+	{
+		"Id": 60,
+		"HeaderText": "CAUTION",
+		"BodyText": "Whilst conducting this task in a ‘Live’ turbine, you will come into contact with Gear Oil.\n\nBefore carrying out this task, you must read and understand the appropriate Risk Assessment and COSHH Sheet for working with Gear Oil.\n<b>Mobilgear SHC XMP 320</b>",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 69,
+		"HeaderText": "Final tasks",
+		"BodyText": "All spills should be cleaned thoroughly.\n\nAll oil contaminated materials should be disposed of as contaminated waste.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ],
+		"Type": "Success"
+	},
+	{
+		"Id": 70,
+		"HeaderText": "CAUTION",
+		"BodyText": "Whilst conducting this task in a ‘Live’ turbine, you will come into contact with Gear Oil.\n\nBefore carrying out this task, you must read and understand the appropriate Risk Assessment and COSHH Sheet for working with Gear Oil\n<b>Mobilgear SHC XMP 320</b>",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 71,
+		"HeaderText": "DANGER",
+		"BodyText": "You are about to disassemble this component without the correct Point of Isolation in place.\nThis is a serious safety breach and potentially very dangerous.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 72,
+		"HeaderText": "CAUTION",
+		"BodyText": "You did not turn off all the pumps before disassembly.\nPlease ensure that you follow the step in the Service Instruction carefully to avoid further errors.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 73,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nThe oil was not drained and you have spilled oil on the nacelle floor.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 74,
+		"HeaderText": "STOP",
+		"BodyText": "Orings were not replaced and and you have a leak.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 79,
+		"HeaderText": "Final tasks",
+		"BodyText": "All spills should be cleaned thoroughly.\n\nAll oil contaminated materials should be disposed of as contaminated waste.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ],
+		"Type": "Success"
+	},
+	{
+		"Id": 80,
+		"HeaderText": "CAUTION",
+		"BodyText": "Whilst conducting this task in a ‘Live’ turbine, you will come into contact with Gear Oil.\n\nBefore carrying out this task, you must read and understand the appropriate Risk Assessment and COSHH Sheet for working with Gear Oil\n<b>Mobilgear SHC XMP 320</b>",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 81,
+		"HeaderText": "DANGER",
+		"BodyText": "You are about to disassemble this component without the correct Point of Isolation in place.\nThis is a serious safety breach and potentially very dangerous.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 82,
+		"HeaderText": "CAUTION",
+		"BodyText": "You did not turn the pumps off before isolating.\nPlease ensure that you follow the step in the Service Instruction carefully to avoid further errors.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 83,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou did not attach drain valve to oil drum and spilled oil on the nacelle floor.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 84,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou did not drain the filter before disassembly and you spilled oil on the nacelle floor.!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 85,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou over tightened the nut and may have damaged the filters.\nTurns have been wound back and you can continue!.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 86,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou did not replace all o-rings and the pump is leaking.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 89,
+		"HeaderText": "Final tasks",
+		"BodyText": "All spills should be cleaned thoroughly.\n\nAll oil contaminated materials should be disposed of as contaminated waste.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ],
+		"Type": "Success"
+	},
+	{
+		"Id": 90,
+		"HeaderText": "CAUTION",
+		"BodyText": "Whilst conducting this task in a ‘Live’ turbine, you will come into contact with Liquid Coolant.\n\nBefore carrying out this task, you must read and understand the appropriate Risk Assessment and COSHH Sheet for working with.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 91,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou did not start pump before taking lid off and you spilled coolant on the floor.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 92,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou have overfilled the coolant tank, ajust coolant to right amount.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 99,
+		"HeaderText": "Final tasks",
+		"BodyText": "All spills should be cleaned thoroughly.\n\nAll oil contaminated materials should be disposed of as contaminated waste.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ],
+		"Type": "Success"
+	},
+	{
+		"Id": 100,
+		"HeaderText": "CAUTION",
+		"BodyText": "Whilst conducting this task in a ‘Live’ turbine, you will come into contact with Liquid Coolant.\n\nBefore carrying out this task, you must read and understand the appropriate Risk Assessment and COSHH Sheet for working with <b>Longlife coolant -20°C + B</b>",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 101,
+		"HeaderText": "DANGER",
+		"BodyText": "You are about to disassemble this component without the correct Point of Isolation in place.\nThis is a serious safety breach and potentially very dangerous.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 102,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou did not set a bucket under the filter and you spilled coolant on the nacelle floor.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 103,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou have not replace the filter.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 109,
+		"HeaderText": "Final tasks",
+		"BodyText": "All spills should be cleaned thoroughly.\n\nAll oil contaminated materials should be disposed of as contaminated waste.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ],
+		"Type": "Success"
+	},
+	{
+		"Id": 110,
+		"HeaderText": "Safety Notice",
+		"BodyText": "This task requires work in the WTG defined HV zone. You must not enter the HV zones until the area is isolated, proven dead and a Work Permit is issued by the HV Authorised Person.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 111,
+		"HeaderText": "DANGER",
+		"BodyText": "The pressure in the transformer is too low, please correct before continuing!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 112,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 113,
+		"HeaderText": "DANGER",
+		"BodyText": "You have not followed the correct procedure.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 114,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure and have spilled oil on the nacelle floor.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 119,
+		"HeaderText": "Final tasks",
+		"BodyText": "You have successfully taken an Oil Sample for Disolved Gas Analysis.\n\nPlease be aware that some oil will be held in the sample tube and will need to be collected as it drains.\n\nEnsure that you have completed all lines of the Sample Form which should be sent with the sample for analysis.\n\nAll oil contaminated materials should be disposed of as contaminated waste.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ],
+		"Type": "Success"
+	},
+	{
+		"Id": 120,
+		"HeaderText": "Safety Notice",
+		"BodyText": "For full detail of how to safely operate the Rotor Locking System, please consult document 0052-9406.\n\nApply the rotor lock with Blade A in the Downward position.\nFor this task, there is enough wind to provide slow rotation of the drivetrain so, the Turner Gear is not required.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 121,
+		"HeaderText": "STOP!",
+		"BodyText": "You have exceeded the maximum pressure of 100 bar when applying the rotor lock.\nThis can cause damage to the Drivetrain Main Bearings.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 122,
+		"HeaderText": "Attention",
+		"BodyText": "It looks like you have a pin that won’t retract. Try using the hand pump to build more pressure.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 123,
+		"HeaderText": "Attention",
+		"BodyText": "All pins are now fully retracted and the rotor is no longer locked.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 124,
+		"HeaderText": "STOP",
+		"BodyText": "You have not applied the Brake! Apply the brake before attempting to operate the rotor locking mechanism!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 125,
+		"HeaderText": "STOP",
+		"BodyText": "You cannot operate the brake until locking tab is secured!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 128,
+		"HeaderText": "Well Done!!",
+		"BodyText": "You have correctly locked the rotor. You can now proceed with the unlocking procedure.\nClose this window to continue",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ],
+		"Type": "Success"
+	},
+	{
+		"Id": 129,
+		"HeaderText": "Task Complete",
+		"BodyText": "You have successfully applied and removed the Rotor Lock. Well Done!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ],
+		"Type": "Success"
+	},
+	{
+		"Id": 130,
+		"HeaderText": "CAUTION",
+		"BodyText": "Whilst conducting this task in a ‘Live’ turbine, you will come into contact with Gear Oil from the Yaw Gear\n\nBefore carrying out this task, you must read and understand the appropriate Risk Assessment and COSHH Sheet for working with Lubrication Oil Shell Omala S4 WE 320",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 131,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou have spilled Oil on the floor.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 132,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou have spilled Oil on the floor.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 133,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou have overflowed the motor and spilled on the floor.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 134,
+		"HeaderText": "STOP",
+		"BodyText": "You have not safely isolated the yaw system and it is not safe to proceed. Go back and check your Point of Isolation",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 135,
+		"HeaderText": "STOP",
+		"BodyText": "You have not followed the correct procedure.\nYou have spilled oil on the floor.\n\nGo back and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 139,
+		"HeaderText": "Final tasks",
+		"BodyText": "All spills should be cleaned thoroughly\nAll oil contaminated materials should be disposed of as contaminated waste.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ],
+		"Type": "Success"
+	},
+	{
+		"Id": 140,
+		"HeaderText": "Safety Notice",
+		"BodyText": "When working in the Yaw Area, you must ensure that the Yaw System is isolated according to the appropriate Safe System of Work Document.\n\nBefore commencing work on the Air Conditioning Unit, ensure the Fans are safely isolated.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 141,
+		"HeaderText": "DANGER",
+		"BodyText": "You are about to disassemble this component without the correct Point of Isolation in place.\nThis is a serious safety breach and potentially very dangerous.\n\nRead the Service Instruction carefully and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 142,
+		"HeaderText": "STOP",
+		"BodyText": "You can not open the unit before hoses attached are removed, remove and try again!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 149,
+		"HeaderText": "Task Complete",
+		"BodyText": "Well done.. You have successfully inspected and Maintained the Tower Conditioning Unit.\n\nEnsure all spills and cleaning materials are cleaned up and all waste is correctly disposed of. Remove any isolations in accordance with your SSOW documentation.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ],
+		"Type": "Success"
+	},
+	{
+		"Id": 150,
+		"HeaderText": "Safety Notice",
+		"BodyText": "Before attempting to install or remove the Turning Gear, the Hydraulic Brake must be applied to prevent the generator from rotating.\n\nOnce the Turning Gear motors are engaged, ensure that the Hydraulic Brake is released before attempting to rotate the Drivetrain with the Turning Gear Pendant.\n\nConsult document 0053-7811 for the specific installation and removal procedures.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 151,
+		"HeaderText": "STOP!",
+		"BodyText": "It looks like you’ve missed something from the procedure. Check again before trying to proceed.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 152,
+		"HeaderText": "Caution!",
+		"BodyText": "You must take care not to overtighten these bolts as there is a risk of stripping the threads or snapping the bolts",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 153,
+		"HeaderText": "STOP!",
+		"BodyText": "You are about to try and turn the drivetrain with the brake applied. Release the brake before continuing!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 154,
+		"HeaderText": "Attention!",
+		"BodyText": "The turning gear will not engage due to the gearwheel and pinion being misaligned.\nTry to reposition the turning gear by using the control pendant",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 158,
+		"HeaderText": "Well Done!",
+		"BodyText": "You have successfully engaged the Turning Gear. Now you can try the Removal procedure. Close this window and continue.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ],
+		"Type": "Success"
+	},
+	{
+		"Id": 159,
+		"HeaderText": "Well Done!",
+		"BodyText": "You have successfully Installed and Removed the Turning Gear. End of activity!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ],
+		"Type": "Success"
+	},
+	{
+		"Id": 10000,
+		"HeaderText": "Model mismatch",
+		"BodyText": "The server is allready running an Activity on a different model.\nYou will be transfered to that model / activity.\nYou can only change model, when no activity is selected!",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	},
+	{
+		"Id": 10001,
+		"HeaderText": "Version mismatch",
+		"BodyText": "The server is running another version than the server, please verify that your are running the right versions.",
+		"ImageUrl": "",
+		"Buttons": [ "OK" ]
+	}
+]

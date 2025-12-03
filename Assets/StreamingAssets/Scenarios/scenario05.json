@@ -1,0 +1,746 @@
+[
+	{
+		"identifier": "M_Glass",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Remove lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 4
+							}
+						]
+					},
+					{
+						"title": "Remove lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 5
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 6
+							}
+						]
+					},
+					{
+						"title": "Replace lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Replace lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 4
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Replace lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 6
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 5
+							}
+						]
+					},
+					{
+						"title": "Shake bottle",
+						"conditions": [
+							{
+								"model": "shake-ok",
+								"key": "value",
+								"value": 1
+							},
+							{
+								"model": "bottle-cleaned",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "shake",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Dispose of oil",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 4
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Dispose of oil",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 6
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 2
+							}
+						]
+					}
+
+				]
+			},
+			{
+				"title": "bottle-tool",
+				"toolactions": [
+					{
+						"title": "Remove bottle",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Faucet",
+		"tools": [
+			{
+				"title": "hose-tool",
+				"toolactions": [
+					{
+						"title": "Attach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "bottle-state",
+								"key": "visible",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Attach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 3
+							},
+							{
+								"model": "bottle-state",
+								"key": "visible",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Detach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Detach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 3
+							}
+						]
+					}
+				]
+			},
+			{
+				"title": "bottle-tool",
+				"toolactions": [
+					{
+						"title": "Place bottle",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Remove bottle",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "FilterValve",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Open",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Open",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Close",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Close",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "TankCover_01_GRP",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "drain01",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "drain01",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Replace lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "drain01",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "drain01",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "TankCover_01_Base",
+		"tools": [
+			{
+				"title": "hose-tool",
+				"toolactions": [
+					{
+						"title": "Attach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "hose-state",
+								"key": "connected",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "drain01",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Attach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "hose-state",
+								"key": "connected",
+								"value": 4
+							}
+						],
+						"actions": [
+							{
+								"model": "drain01",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Detach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "drain01",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "drain01",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "TankCover_02_GRP",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "drain02",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "drain02",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Replace lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "drain02",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "drain02",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "TankCover_02_Base",
+		"tools": [
+			{
+				"title": "hose-tool",
+				"toolactions": [
+					{
+						"title": "Attach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "hose-state",
+								"key": "connected",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "drain02",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Attach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "hose-state",
+								"key": "connected",
+								"value": 4
+							}
+						],
+						"actions": [
+							{
+								"model": "drain02",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Detach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "drain02",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "drain02",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "TankCover_03_GRP",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "drain03",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "drain03",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Replace lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "drain03",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "drain03",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "TankCover_03_Base",
+		"tools": [
+			{
+				"title": "hose-tool",
+				"toolactions": [
+					{
+						"title": "Attach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "hose-state",
+								"key": "connected",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "drain03",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Attach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "hose-state",
+								"key": "connected",
+								"value": 4
+							}
+						],
+						"actions": [
+							{
+								"model": "drain03",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Detach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "drain03",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "drain03",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

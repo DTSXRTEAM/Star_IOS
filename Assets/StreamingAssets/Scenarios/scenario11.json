@@ -1,0 +1,503 @@
+[
+	{
+		"identifier": "Transformer_Valve_Cap",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Cap",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap-spout",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "tap-spout",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "AdapterCollider",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Attach adapter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap-spout",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "tap-spout",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Detach adapter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap-spout",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "tap-spout",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Attach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap-spout",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "tap-spout",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Detach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap-spout",
+								"key": "index",
+								"value": 3
+							},
+							{
+								"model": "hose-locked",
+								"key": "active",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "tap-spout",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Refit Cap",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap-spout",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "tap-spout",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			},
+			{
+				"title": "syringe-tool",
+				"toolactions": [
+					{
+						"title": "Attach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap-spout",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "tap-spout",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Detach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap-spout",
+								"key": "index",
+								"value": 3
+							},
+							{
+								"model": "hose-locked",
+								"key": "active",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "tap-spout",
+								"key": "index",
+								"value": 2
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "CapOffCollider",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Refit Cap",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap-spout",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "tap-spout",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Transformer_Valve_Safety",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Lock",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit Lock",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			},
+			{
+				"title": "syringe-tool",
+				"toolactions": [
+					{
+						"title": "Remove Lock",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit Lock",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Transformer_Valve_Handle",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Open Valve",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Close Valve",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit Lock",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			},
+			{
+				"title": "syringe-tool",
+				"toolactions": [
+					{
+						"title": "Open Valve",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Close Valve",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Syringe",
+		"tools": [
+			{
+				"title": "syringe-tool",
+				"toolactions": [
+					{
+						"title": "Attach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "syringe",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "syringe",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Detach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "syringe",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "hose-locked",
+								"key": "active",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "syringe",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Syringe",
+		"tools": [
+			{
+				"title": "syringe-tool",
+				"toolactions": [
+					{
+						"title": "Attach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "syringe",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "syringe",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Detach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "syringe",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "hose-locked",
+								"key": "active",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "syringe",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}	
+		]
+	}
+]

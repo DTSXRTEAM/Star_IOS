@@ -1,0 +1,548 @@
+[
+	// Pressureline 1
+	{
+		"identifier": "Pressureline01",
+		"tools": [
+			{
+				"title": "manometer",
+				"toolactions": [
+					{
+						"title": "Attach manometer",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Attach manometer",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Attach manometer",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Detach manometer",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	// Pressureline 2
+	{
+		"identifier": "Pressureline02",
+		"tools": [
+			{
+				"title": "manometer",
+				"toolactions": [
+					{
+						"title": "Attach manometer",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Attach manometer",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Attach manometer",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Detach manometer",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	// Pressureline 3
+	{
+		"identifier": "Pressureline03",
+		"tools": [
+			{
+				"title": "manometer",
+				"toolactions": [
+					{
+						"title": "Attach manometer",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Attach manometer",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Attach manometer",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Detach manometer",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "manometer-probe",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	// Filter 1
+	{
+		"identifier": "Filter01",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Replace filter element",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01-replaced",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01-replaced",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	// Filter cover 1
+	{
+		"identifier": "Filter01_Cover",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove filter bowl",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace filter bowl seal",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "enabled",
+								"value": true
+							},
+							{
+								"model": "seal01-replaced",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "seal01-replaced",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace filter bowl",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	// Filter 2
+	{
+		"identifier": "Filter02",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Replace filter element",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02-replaced",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02-replaced",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	// Filter cover 2 
+	{
+		"identifier": "Filter02_Cover",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove filter bowl",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace filter bowl seal",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "enabled",
+								"value": true
+							},
+							{
+								"model": "seal02-replaced",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "seal02-replaced",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace filter bowl",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	// Filter 3
+	{
+		"identifier": "Filter03",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Replace filter element",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03-replaced",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03-replaced",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	// Filter cover 3
+	{
+		"identifier": "Filter03_Cover",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove filter bowl",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace filter bowl seal",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "enabled",
+								"value": true
+							},
+							{
+								"model": "seal03-replaced",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "seal03-replaced",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace filter bowl",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

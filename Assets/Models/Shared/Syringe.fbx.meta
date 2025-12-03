@@ -1,0 +1,228 @@
+fileFormatVersion: 2
+guid: d3187dc4de1e8d343a4c6a44ccff34a4
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: bezier22
+    100002: Liquid
+    100004: Push_Amount
+    100006: Syringe
+    100008: //RootNode
+    100010: Tube
+    100012: Valve
+    100014: Valve_GRP
+    100016: Valve_Rotation
+    100018: TransfromOil
+    100020: OIl
+    100022: Drain
+    100024: Syringe_002_MLJ:TransfromOil
+    100026: TransfromOil 1
+    100028: Tube_01
+    100030: Tube_02
+    100032: Air
+    400000: bezier22
+    400002: Liquid
+    400004: Push_Amount
+    400006: Syringe
+    400008: //RootNode
+    400010: Tube
+    400012: Valve
+    400014: Valve_GRP
+    400016: Valve_Rotation
+    400018: TransfromOil
+    400020: OIl
+    400022: Drain
+    400024: Syringe_002_MLJ:TransfromOil
+    400026: TransfromOil 1
+    400028: Tube_01
+    400030: Tube_02
+    400032: Air
+    2100000: M_Luquid
+    2100002: M_TransformerOil
+    2100004: M_Glass
+    2100006: M_Rubber_Black
+    2100008: M_Steel_Polished
+    2100010: M_Plastic_White
+    2100012: M_Decal
+    2100014: M_Liquid
+    2100016: M_SampleTube
+    2100018: Decal
+    2100020: lambert1
+    2100022: Syringe_002_MLJ_M_TransformerOil
+    2100024: Syringe_002_MLJ_M_SampleTube
+    2300000: Push_Amount
+    2300002: Syringe
+    2300004: Tube
+    2300006: Valve
+    2300008: TransfromOil
+    2300010: OIl
+    2300012: Drain
+    2300014: Syringe_002_MLJ:TransfromOil
+    2300016: TransfromOil 1
+    2300018: Tube_01
+    2300020: Tube_02
+    2300022: Air
+    3300000: Push_Amount
+    3300002: Syringe
+    3300004: Tube
+    3300006: Valve
+    3300008: TransfromOil
+    3300010: OIl
+    3300012: Drain
+    3300014: Syringe_002_MLJ:TransfromOil
+    3300016: TransfromOil 1
+    3300018: Tube_01
+    3300020: Tube_02
+    3300022: Air
+    4300000: Liquid
+    4300002: Tube
+    4300004: Push_Amount
+    4300006: Syringe
+    4300008: Valve
+    4300010: TransfromOil
+    4300012: OIl
+    4300014: Drain
+    4300016: Tube_02
+    4300018: Tube_01
+    4300020: TransfromOil
+    4300022: Syringe_002_MLJ:TransfromOil
+    4300024: Air
+    9500000: //RootNode
+    13700000: Liquid
+    13700002: Push_Amount
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Decal
+    second: {fileID: 2100000, guid: 32c01c285145af047880e09996a82248, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Decal
+    second: {fileID: 2100000, guid: 32c01c285145af047880e09996a82248, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Glass
+    second: {fileID: 2100000, guid: 2f0c9207cba738043a446b33aff7fd97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Liquid
+    second: {fileID: 2100000, guid: 90d2d4684decb8f4d97caa1e13248427, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Luquid
+    second: {fileID: 2100000, guid: 6e545637acb544d46adcdc936573d706, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Plastic_White
+    second: {fileID: 2100000, guid: 2f0ae30a6312f6949889e975b2a80221, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Rubber_Black
+    second: {fileID: 2100000, guid: 761a0ed71b02212439a6363b53929fcc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_SampleTube
+    second: {fileID: 2100000, guid: c54a96e7f62bdf54980db4309c893d60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Steel_Polished
+    second: {fileID: 2100000, guid: 1c2dfd4a4b2b63443a0e4272ba7b973a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_TransformerOil
+    second: {fileID: 2100000, guid: 90d2d4684decb8f4d97caa1e13248427, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,291 @@
+fileFormatVersion: 2
+guid: 2849886fe4bd9a0458a3defb2badbfaf
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: DrainPlug
+    100002: DrainPlug_GRP
+    100004: DrainPlug_Rotation
+    100006: GPlug
+    100008: GPlug_GRP
+    100010: GPlug_Rotation
+    100012: ManeticPlug
+    100014: ManeticPlug_GRP
+    100016: ManeticPlug_Rotation
+    100018: Oil_Amount
+    100020: //RootNode
+    100022: Yaw
+    100024: DrainOil
+    100026: DrainTube
+    100028: FillOil
+    100030: FillPlug
+    100032: FillPlug_GRP
+    100034: FillPlug_Rotation
+    100036: FillTube
+    100038: MagneticPlug
+    100040: MagneticPlug_GRP
+    100042: MagneticPlug_Rotation
+    100044: Decals
+    100046: DrainOil 1
+    100048: DrainPlug 1
+    100050: DrainPlug 2
+    100052: DrainPlug_Off
+    100054: DrainTube_Drain
+    100056: DrainTube_OilDrum
+    100058: FIllPlug
+    100060: FillPlug_Metal
+    100062: DrainOil_Drain
+    100064: DrainOil_Tube
+    100066: DrainPlug_Drain
+    100068: DrainPlug_OilDrum
+    100070: DrainPlug_Tube
+    100072: FillPlug_Fill
+    400000: DrainPlug
+    400002: DrainPlug_GRP
+    400004: DrainPlug_Rotation
+    400006: GPlug
+    400008: GPlug_GRP
+    400010: GPlug_Rotation
+    400012: ManeticPlug
+    400014: ManeticPlug_GRP
+    400016: ManeticPlug_Rotation
+    400018: Oil_Amount
+    400020: Yaw
+    400022: //RootNode
+    400024: DrainOil
+    400026: DrainTube
+    400028: FillOil
+    400030: FillPlug
+    400032: FillPlug_GRP
+    400034: FillPlug_Rotation
+    400036: FillTube
+    400038: MagneticPlug
+    400040: MagneticPlug_GRP
+    400042: MagneticPlug_Rotation
+    400044: Decals
+    400046: DrainOil 1
+    400048: DrainPlug 1
+    400050: DrainPlug 2
+    400052: DrainPlug_Off
+    400054: DrainTube_Drain
+    400056: DrainTube_OilDrum
+    400058: FIllPlug
+    400060: FillPlug_Metal
+    400062: DrainOil_Drain
+    400064: DrainOil_Tube
+    400066: DrainPlug_Drain
+    400068: DrainPlug_OilDrum
+    400070: DrainPlug_Tube
+    400072: FillPlug_Fill
+    2100000: M_Yaw
+    2100002: M_Oil_Amount
+    2100004: M_TransparentTube
+    2100006: M_FillOil
+    2100008: M_DrainOil
+    2100010: M_YawUpper
+    2100012: M_YawBottom
+    2100014: M_Decals
+    2300000: DrainPlug
+    2300002: GPlug
+    2300004: ManeticPlug
+    2300006: Oil_Amount
+    2300008: Yaw
+    2300010: DrainOil
+    2300012: DrainTube
+    2300014: FillOil
+    2300016: FillPlug
+    2300018: FillTube
+    2300020: MagneticPlug
+    2300022: Decals
+    2300024: DrainOil 1
+    2300026: DrainPlug 1
+    2300028: DrainPlug 2
+    2300030: DrainPlug_Off
+    2300032: DrainTube_Drain
+    2300034: DrainTube_OilDrum
+    2300036: FIllPlug
+    2300038: FillPlug_Metal
+    2300040: DrainOil_Drain
+    2300042: DrainOil_Tube
+    2300044: DrainPlug_Drain
+    2300046: DrainPlug_OilDrum
+    2300048: DrainPlug_Tube
+    2300050: FillPlug_Fill
+    3300000: DrainPlug
+    3300002: GPlug
+    3300004: ManeticPlug
+    3300006: Oil_Amount
+    3300008: Yaw
+    3300010: DrainOil
+    3300012: DrainTube
+    3300014: FillOil
+    3300016: FillPlug
+    3300018: FillTube
+    3300020: MagneticPlug
+    3300022: Decals
+    3300024: DrainOil 1
+    3300026: DrainPlug 1
+    3300028: DrainPlug 2
+    3300030: DrainPlug_Off
+    3300032: DrainTube_Drain
+    3300034: DrainTube_OilDrum
+    3300036: FIllPlug
+    3300038: FillPlug_Metal
+    3300040: DrainOil_Drain
+    3300042: DrainOil_Tube
+    3300044: DrainPlug_Drain
+    3300046: DrainPlug_OilDrum
+    3300048: DrainPlug_Tube
+    3300050: FillPlug_Fill
+    4300000: DrainPlug
+    4300002: GPlug
+    4300004: ManeticPlug
+    4300006: Yaw
+    4300008: Oil_Amount
+    4300010: FillPlug
+    4300012: FillTube
+    4300014: FillOil
+    4300016: DrainTube
+    4300018: DrainOil
+    4300020: MagneticPlug
+    4300022: FillPlug_Metal
+    4300024: DrainTube_OilDrum
+    4300026: DrainPlug_Off
+    4300028: DrainPlug
+    4300030: FIllPlug
+    4300032: Decals
+    4300034: DrainTube_Drain
+    4300036: DrainOil
+    4300038: DrainPlug
+    4300040: DrainPlug_OilDrum
+    4300042: DrainOil_Tube
+    4300044: DrainPlug_Tube
+    4300046: FillPlug_Fill
+    4300048: DrainOil_Drain
+    4300050: DrainPlug_Drain
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Decals
+    second: {fileID: 2100000, guid: f6f1f717e6b52134c9106da539591961, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_DrainOil
+    second: {fileID: 2100000, guid: bef5bb6c1b6a5374e8f52cda91a3887e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_FillOil
+    second: {fileID: 2100000, guid: 6a4bf834f57031a4cb2e119a57222941, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Oil_Amount
+    second: {fileID: 2100000, guid: 1b98e0f27cbba8444b5e5b3d72ef6937, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_TransparentTube
+    second: {fileID: 2100000, guid: c65ed4a648ed4844a9f1d97b951c7e40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Yaw
+    second: {fileID: 2100000, guid: ddff4f23efa567449af18261926590ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_YawBottom
+    second: {fileID: 2100000, guid: 9ad54a7db1ebc3f46827a06abab284df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_YawUpper
+    second: {fileID: 2100000, guid: 7f9464c065bbc4846a9846bf8f9813b5, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

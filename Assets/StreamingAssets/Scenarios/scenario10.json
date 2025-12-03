@@ -1,0 +1,314 @@
+[
+	{
+		"identifier": "PipeFliter",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Extract Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Insert Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Clean Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter-state",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "filter-state",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Replace Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter-state",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter-state",
+								"key": "index",
+								"value": 2
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "FilterCap",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Filter Cap",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Refit filter cap",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Screws_GRP",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Bolts",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit bolts",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Handle_01",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Open",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "valve01",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "valve01",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Close",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "valve01",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "valve01",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Handle_02",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Open",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "valve02",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "valve02",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Close",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "valve02",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "valve02",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BucketPlacementTarget",
+		"tools": [
+			{
+				"title": "bucket-tool",
+				"toolactions": [
+					{
+						"title": "Place",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bucket",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "bucket",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Remove",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bucket",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "bucket",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

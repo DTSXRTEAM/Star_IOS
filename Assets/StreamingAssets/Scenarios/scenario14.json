@@ -1,0 +1,2478 @@
+[
+	{
+		"identifier": "Hose_01",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "hose01-attached",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "hose01-attached",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					},
+					{
+						"title": "Refit Hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "hose01-attached",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "unit-state",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "hose01-attached",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Clean Hose",
+						"autorun": false,
+						"conditions": [],
+						"actions": [
+							{
+								"model": "dummy-hose",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Hose_02",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "hose02-attached",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "hose02-attached",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					},
+					{
+						"title": "Refit Hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "hose02-attached",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "unit-state",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "hose02-attached",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Clean Hose",
+						"autorun": false,
+						"conditions": [],
+						"actions": [
+							{
+								"model": "dummy-hose",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Unit_01",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Release & Open",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "unit-state",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "unit-state",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Close & Lock",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "unit-state",
+								"key": "index",
+								"value": 2
+							},
+							{
+								"model": "filters-mounted",
+								"key": "value",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "unit-state",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Hoses_01_On",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Hoses_01_Off",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Refit Hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Hoses_02_On",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Hoses_02_Off",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Refit Hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Hoses_03_On",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Hoses_03_Off",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Refit Hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Hoses_04_On",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Hoses_04_Off",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Refit Hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "HeadScrews_01",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Handscrew",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Refit Handscrew",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "HeadScrews_02",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Handscrew",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Refit Handscrew",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "HeadScrews_03",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Handscrew",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Refit Handscrew",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "HeadScrews_04",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Handscrew",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Refit Handscrew",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Filter_01",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 2
+							},
+							{
+								"model": "unit-state",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Refit Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Replace Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01-replaced",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01-replaced",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Filter_02",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 2
+							},
+							{
+								"model": "unit-state",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Refit Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Replace Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02-replaced",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02-replaced",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Filter_03",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 2
+							},
+							{
+								"model": "unit-state",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Refit Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Replace Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03-replaced",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03-replaced",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Filter_04",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 2
+							},
+							{
+								"model": "unit-state",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Refit Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Replace Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04-replaced",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04-replaced",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Clean_01",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Housing",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01-cleaned",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01-cleaned",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Clean_02",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Housing",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02-cleaned",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02-cleaned",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Clean_03",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Housing",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03-cleaned",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03-cleaned",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Clean_04",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Housing",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04-cleaned",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04-cleaned",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "WaterDrain_Hose_01",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "hoseA-clean",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "hoseA-clean",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "WaterDrain_Hose_02",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Hose",
+						"autorun": false,
+						"conditions": [],
+						"actions": [
+							{
+								"model": "dummy-hose",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "WaterDrain_Hose_03",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Hose",
+						"autorun": false,
+						"conditions": [],
+						"actions": [
+							{
+								"model": "dummy-hose",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "WaterDrain_Hose_04",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Hose",
+						"autorun": false,
+						"conditions": [],
+						"actions": [
+							{
+								"model": "dummy-hose",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "DummyHose",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Hose",
+						"autorun": false,
+						"conditions": [],
+						"actions": [
+							{
+								"model": "dummy-hose",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Hose_05",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Hose",
+						"autorun": false,
+						"conditions": [],
+						"actions": [
+							{
+								"model": "dummy-hose",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Hose_6789",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Hose",
+						"autorun": false,
+						"conditions": [],
+						"actions": [
+							{
+								"model": "dummy-hose",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Hose_1011",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Hose",
+						"autorun": false,
+						"conditions": [],
+						"actions": [
+							{
+								"model": "dummy-hose",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Hose_12",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Hose",
+						"autorun": false,
+						"conditions": [],
+						"actions": [
+							{
+								"model": "dummy-hose",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Hose_13",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "hoseB-clean",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "hoseB-clean",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "WaterDrain_Hose_014",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Hose",
+						"autorun": false,
+						"conditions": [],
+						"actions": [
+							{
+								"model": "dummy-hose",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "WaterDrain_Hose_015",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Hose",
+						"autorun": false,
+						"conditions": [],
+						"actions": [
+							{
+								"model": "dummy-hose",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BoxFilters_01",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter05",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "unit-state",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter05",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter05",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter05",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Replace Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter05",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "filter05-replaced",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter05-replaced",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Lubricate Seals",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter05",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "filter05-replaced",
+								"key": "enabled",
+								"value": true
+							},
+							{
+								"model": "filter05-lubed",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter05-lubed",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BoxFilters_02",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter06",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "unit-state",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter06",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter06",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter06",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Replace Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter06",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "filter06-replaced",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter06-replaced",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Lubricate Seals",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter06",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "filter06-replaced",
+								"key": "enabled",
+								"value": true
+							},
+							{
+								"model": "filter06-lubed",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter06-lubed",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BoxFilters_03",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter07",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "unit-state",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter07",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter07",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter07",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Replace Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter07",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "filter07-replaced",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter07-replaced",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Lubricate Seals",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter07",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "filter07-replaced",
+								"key": "enabled",
+								"value": true
+							},
+							{
+								"model": "filter07-lubed",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter07-lubed",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BoxFilters_04",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter08",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "unit-state",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter08",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter08",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter08",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Replace Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter08",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "filter08-replaced",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter08-replaced",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Lubricate Seals",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter08",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "filter08-replaced",
+								"key": "enabled",
+								"value": true
+							},
+							{
+								"model": "filter08-lubed",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter08-lubed",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BoxFilters_05",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter09",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "unit-state",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter09",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter09",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter09",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Replace Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter09",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "filter09-replaced",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter09-replaced",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Lubricate Seals",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter09",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "filter09-replaced",
+								"key": "enabled",
+								"value": true
+							},
+							{
+								"model": "filter09-lubed",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter09-lubed",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BoxFilters_06",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter10",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "unit-state",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter10",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter10",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter10",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Replace Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter10",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "filter10-replaced",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter10-replaced",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Lubricate Seals",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter10",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "filter10-replaced",
+								"key": "enabled",
+								"value": true
+							},
+							{
+								"model": "filter10-lubed",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter10-lubed",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BoxFilters_07",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter11",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "unit-state",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter11",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter11",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter11",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Replace Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter11",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "filter11-replaced",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter11-replaced",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Lubricate Seals",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter11",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "filter11-replaced",
+								"key": "enabled",
+								"value": true
+							},
+							{
+								"model": "filter11-lubed",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter11-lubed",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BoxFilters_08",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter12",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "unit-state",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter12",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter12",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter12",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Replace Filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter12",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "filter12-replaced",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter12-replaced",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Lubricate Seals",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter12",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "filter12-replaced",
+								"key": "enabled",
+								"value": true
+							},
+							{
+								"model": "filter12-lubed",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter12-lubed",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Seals_Broken",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Replace Seal",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "seal-done",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "seal-done",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BoxFilterHousingDirt_01",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Housing",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter05-cleaned",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter05",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter05-cleaned",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BoxFilterHousingDirt_02",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Housing",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter06-cleaned",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter06",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter06-cleaned",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BoxFilterHousingDirt_03",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Housing",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter07-cleaned",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter07",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter07-cleaned",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BoxFilterHousingDirt_04",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Housing",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter08-cleaned",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter08",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter08-cleaned",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BoxFilterHousingDirt_05",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Housing",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter09-cleaned",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter09",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter09-cleaned",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BoxFilterHousingDirt_06",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Housing",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter10-cleaned",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter10",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter10-cleaned",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BoxFilterHousingDirt_07",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Housing",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter11-cleaned",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter11",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter11-cleaned",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BoxFilterHousingDirt_08",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean Housing",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter12-cleaned",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter12",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter12-cleaned",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Unit_02_Door",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Hatch",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "hatch-cover",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "hatch-cover",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					},
+					{
+						"title": "Refit Hatch",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "hatch-cover",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "hatch-cover",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "LockingMac_02",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Repair Hatch Mechanish",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "hatchB-repaired",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "hatchB",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "hatchB-repaired",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

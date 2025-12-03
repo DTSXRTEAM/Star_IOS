@@ -1,0 +1,1027 @@
+[
+	{
+		"identifier": "OfflinePump_Base",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Clean out oil residue",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter-clean",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter-clean",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace o-ring",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "oring02-new",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 9
+							}
+						],
+						"actions": [
+							{
+								"model": "oring02-new",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}			
+		]
+	},
+	{
+		"identifier": "Filter_02",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove bottom filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 8
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 9
+							}
+						]
+					},
+					{
+						"title": "Refit",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 9
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 8
+							}
+						]
+					},
+					{
+						"title": "Replace",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "bottom-new",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 9
+							}
+						],
+						"actions": [
+							{
+								"model": "bottom-new",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Spacer",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove spacer",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 7
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 8
+							}
+						]
+					},
+					{
+						"title": "Refit",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 8
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 7
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Filter_01",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 6
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 7
+							}
+						]
+					},
+					{
+						"title": "Refit",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 7
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 6
+							}
+						]
+					},
+					{
+						"title": "Replace",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "top-new",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 9
+							}
+						],
+						"actions": [
+							{
+								"model": "top-new",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "top-new",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 8
+							}
+						],
+						"actions": [
+							{
+								"model": "top-new",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "top-new",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 7
+							}
+						],
+						"actions": [
+							{
+								"model": "top-new",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "SpringGuide",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove springguide",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 5
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 6
+							}
+						]
+					},
+					{
+						"title": "Refit",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 6
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 5
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Spring",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove spring",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 4
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 5
+							}
+						]
+					},
+					{
+						"title": "Refit",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 5
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 4
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "FilterNut",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Filternut",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 4
+							}
+						]
+					},
+					{
+						"title": "Remove  Filternut",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 4
+							}
+						]
+					},
+					{
+						"title": "Refit",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 4
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 3
+							}
+						]
+					}
+				]
+			},
+			{
+				"title": "spanner",
+				"toolactions": [
+					{
+						"title": "Tighten 2 turns",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "nut-incr02",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "LubricationPump_OuterShell",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Refit",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Replace o-rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "oring01-new",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "oring01-new",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace o-rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "oring01-new",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "oring01-new",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace o-rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "oring01-new",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 4
+							}
+						],
+						"actions": [
+							{
+								"model": "oring01-new",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace o-rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "oring01-new",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 5
+							}
+						],
+						"actions": [
+							{
+								"model": "oring01-new",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace o-rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "oring01-new",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 6
+							}
+						],
+						"actions": [
+							{
+								"model": "oring01-new",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace o-rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "oring01-new",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 7
+							}
+						],
+						"actions": [
+							{
+								"model": "oring01-new",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace o-rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "oring01-new",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 8
+							}
+						],
+						"actions": [
+							{
+								"model": "oring01-new",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace o-rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "oring01-new",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 9
+							}
+						],
+						"actions": [
+							{
+								"model": "oring01-new",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+
+				]
+			}
+		]
+	},
+	{
+		"identifier": "TopLockingNut",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Replace",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "LubricationPump_Valve",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Open",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Open",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Close",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Close",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			},
+			{
+				"title": "hose-tool",
+				"toolactions": [
+					{
+						"title": "Attach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Detach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Detach hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 3
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "OilBarrel",
+		"tools": [
+			{
+				"title": "hose-tool",
+				"toolactions": [
+					{
+						"title": "Insert hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "oil-drum",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "oil-drum",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Remove hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "oil-drum",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "oil-drum",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "DrumPlacementTarget",
+		"tools": [
+			{
+				"title": "drum-tool",
+				"toolactions": [
+					{
+						"title": "Place",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "oil-drum",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "oil-drum",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Remove",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "oil-drum",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "oil-drum",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Close",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Close",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "tap",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

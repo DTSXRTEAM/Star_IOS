@@ -1,0 +1,232 @@
+fileFormatVersion: 2
+guid: d3534980d4368124b9e1eedd7cf533c0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: TransformerPart_01
+    100004: TransformerPart_02
+    100006: TransformerPart_03
+    100008: TransformerPart_04
+    100010: Transformer_Valve_Cap
+    100012: Transformer_Valve_Cap_ZERO
+    100014: Transformer_Valve_Handle
+    100016: Transformer_Valve_Handle_ZERO
+    100018: Transformer_Valve_Safety
+    100020: Transformer_Valve_Safety_ZERO
+    100022: Adapter
+    100024: Chain_Off
+    100026: Chain_On
+    100028: TransformerAdapter_ZERO
+    100030: Syringe_002_MLJ:TransfromOil
+    100032: TransfromOil
+    100034: TransfromOil 1
+    100036: Tube
+    100038: Tube_01
+    100040: Tube_02
+    100042: Tubes_GRP
+    100044: TransfromOil 2
+    400000: //RootNode
+    400002: TransformerPart_01
+    400004: TransformerPart_02
+    400006: TransformerPart_03
+    400008: TransformerPart_04
+    400010: Transformer_Valve_Cap
+    400012: Transformer_Valve_Cap_ZERO
+    400014: Transformer_Valve_Handle
+    400016: Transformer_Valve_Handle_ZERO
+    400018: Transformer_Valve_Safety
+    400020: Transformer_Valve_Safety_ZERO
+    400022: Adapter
+    400024: Chain_Off
+    400026: Chain_On
+    400028: TransformerAdapter_ZERO
+    400030: Syringe_002_MLJ:TransfromOil
+    400032: TransfromOil
+    400034: TransfromOil 1
+    400036: Tube
+    400038: Tube_01
+    400040: Tube_02
+    400042: Tubes_GRP
+    400044: TransfromOil 2
+    2100000: M_Transformer_02
+    2100002: M_Transformer_03
+    2100004: M_Tranformer_01
+    2100006: M_Transformer_04
+    2100008: M_Adapter
+    2100010: Syringe_002_MLJ_M_TransformerOil1
+    2100012: Syringe_002_MLJ_M_SampleTube1
+    2100014: M_SampleTube
+    2100016: M_TransformerOil
+    2300000: TransformerPart_01
+    2300002: TransformerPart_02
+    2300004: TransformerPart_03
+    2300006: TransformerPart_04
+    2300008: Transformer_Valve_Cap
+    2300010: Transformer_Valve_Handle
+    2300012: Transformer_Valve_Safety
+    2300014: Adapter
+    2300016: Chain_Off
+    2300018: Chain_On
+    2300020: Syringe_002_MLJ:TransfromOil
+    2300022: TransfromOil
+    2300024: TransfromOil 1
+    2300026: Tube
+    2300028: Tube_01
+    2300030: Tube_02
+    2300032: TransfromOil 2
+    3300000: TransformerPart_01
+    3300002: TransformerPart_02
+    3300004: TransformerPart_03
+    3300006: TransformerPart_04
+    3300008: Transformer_Valve_Cap
+    3300010: Transformer_Valve_Handle
+    3300012: Transformer_Valve_Safety
+    3300014: Adapter
+    3300016: Chain_Off
+    3300018: Chain_On
+    3300020: Syringe_002_MLJ:TransfromOil
+    3300022: TransfromOil
+    3300024: TransfromOil 1
+    3300026: Tube
+    3300028: Tube_01
+    3300030: Tube_02
+    3300032: TransfromOil 2
+    4300000: TransformerPart_02
+    4300002: TransformerPart_04
+    4300004: TransformerPart_01
+    4300006: TransformerPart_03
+    4300008: Transformer_Valve_Handle
+    4300010: Transformer_Valve_Cap
+    4300012: Transformer_Valve_Safety
+    4300014: Chain_On
+    4300016: Adapter
+    4300018: Chain_Off
+    4300020: Tube_02
+    4300022: TransfromOil
+    4300024: Tube_01
+    4300026: TransfromOil
+    4300028: Tube
+    4300030: Syringe_002_MLJ:TransfromOil
+    4300032: TransfromOil
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Adapter
+    second: {fileID: 2100000, guid: ac56891170d7d3349afb3d81e365c093, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_SampleTube
+    second: {fileID: 2100000, guid: bb26e385e6f7b184798e86c17dcd30e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Tranformer_01
+    second: {fileID: 2100000, guid: 22781a6d645bd57418cf691d493f227f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_TransformerOil
+    second: {fileID: 2100000, guid: d366635c46e73ab4584fa2fc1531c76f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Transformer_02
+    second: {fileID: 2100000, guid: a437350403479534fbffc741a451671c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Transformer_03
+    second: {fileID: 2100000, guid: 9b377eff565fb5c41b215469a0698107, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Transformer_04
+    second: {fileID: 2100000, guid: b08dc356147a9f4408636ab889d342a1, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

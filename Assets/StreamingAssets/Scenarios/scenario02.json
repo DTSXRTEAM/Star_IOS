@@ -1,0 +1,233 @@
+[
+	{
+		"identifier": "DipStick_Screw",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Dipstick",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "dipstick",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "dipstick",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace Dipstick",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "dipstick",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "dipstick",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					}
+				]
+			}
+		]
+	}, 
+	// QM005
+	{
+		"identifier": "DrainPoint",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Cap",
+						"autorun" :  true,
+						"conditions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Replace Cap",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Add 20L oil",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "hub-safe",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "incr20",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Add 10L oil",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "hub-safe",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "incr10",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Add 5L oil",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "hub-safe",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "incr05",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Remove 20L oil",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "hub-safe",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "decr20",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Remove 10L oil",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "hub-safe",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "decr10",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Remove 5L oil",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "hub-safe",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "decr05",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

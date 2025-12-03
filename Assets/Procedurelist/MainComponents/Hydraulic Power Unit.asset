@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3abc1981703fcd4c9b7bb88a4e53fd2, type: 3}
+  m_Name: Hydraulic Power Unit
+  m_EditorClassIdentifier: 
+  QRModelKey: HPU
+  ComponentName: Hydraulic Power Unit
+  Procedures:
+  - {fileID: 11400000, guid: 9fa2cd0250d20dc44aa052859bcdddba, type: 2}
+  - {fileID: 11400000, guid: a980715b4aadcae41ab1b32f7c644650, type: 2}
+  - {fileID: 11400000, guid: 8ec3774d29ed0a446a6a67c62fdef326, type: 2}
+  - {fileID: 11400000, guid: d87310d977a0b7f458261af5a4e88a57, type: 2}

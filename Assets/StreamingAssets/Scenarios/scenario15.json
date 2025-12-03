@@ -1,0 +1,1303 @@
+[
+	{
+		"identifier": "BreakButton",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Apply Brake",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "brake",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "brake",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Remove Brake",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "brake",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "brake",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BoltLossing_GRP",
+		"tools": [
+			{
+				"title": "spanner",
+				"toolactions": [
+					{
+						"title": "Loosen Bolts",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "pivot-left",
+								"key": "index",
+								"type": "greater",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "pivot-left",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 25 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "pivot-left",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "pivot-left",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 50 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "pivot-left",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "pivot-left",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 75 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "pivot-left",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "pivot-left",
+								"key": "index",
+								"value": 4
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 100 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "pivot-left",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "pivot-left",
+								"key": "index",
+								"value": 5
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 125 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "pivot-left",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "pivot-left",
+								"key": "index",
+								"value": 6
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 150 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "pivot-left",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "pivot-left",
+								"key": "index",
+								"value": 7
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BoltLossing_GRP 1",
+		"tools": [
+			{
+				"title": "spanner",
+				"toolactions": [
+					{
+						"title": "Loosen Bolts",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "pivot-right",
+								"key": "index",
+								"type": "greater",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "pivot-right",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 25 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "pivot-right",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "pivot-right",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 50 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "pivot-right",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "pivot-right",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 75 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "pivot-right",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "pivot-right",
+								"key": "index",
+								"value": 4
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 100 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "pivot-right",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "pivot-right",
+								"key": "index",
+								"value": 5
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 125 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "pivot-right",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "pivot-right",
+								"key": "index",
+								"value": 6
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 150 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "pivot-right",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "pivot-right",
+								"key": "index",
+								"value": 7
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "TurningGear_Left_Bolts",
+		"tools": [
+			{
+				"title": "spanner",
+				"toolactions": [
+					{
+						"title": "Remove Bolts & Lockingpin",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Refit Bolts & Lockingpin",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "gear-left",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit Bolts & Lockingpin",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "gear-left",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 25 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 50 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 75 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"value": 4
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 100 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"value": 5
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 125 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"value": 6
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 150 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"value": 7
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "TurningGear_Right_Bolts",
+		"tools": [
+			{
+				"title": "spanner",
+				"toolactions": [
+					{
+						"title": "Remove Bolts & Lockingpin",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Refit Bolts & Lockingpin",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "gear-right",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit Bolts & Lockingpin",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "gear-right",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 25 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 50 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 75 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"value": 4
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 100 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"value": 5
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 125 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"value": 6
+							}
+						]
+					},
+					{
+						"title": "Tighten Bolts 150 nm",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"value": 7
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Turning_Gear 1",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Engage Gear",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "pivot-right",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "gear-right",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "gear-right",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Disengage Gear",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-right",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "pivot-right",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "gear-right",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "gear-right",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Turning_Gear",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Engage Gear",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "pivot-left",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "gear-left",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "gear-left-error",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "gear-left",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Engage Gear",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "pivot-left",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "gear-left",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "gear-left-error",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "gear-left",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Engage Gear",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "pivot-left",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "gear-left",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "gear-left-error",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "gear-left",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Disengage Gear",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "lever-left",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "pivot-left",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "gear-left",
+								"key": "index",
+								"type": "greater",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "gear-left",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Generator_Plates_Removeable_01",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Hide Cover",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "gear-cover01",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "gear-cover01",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					},
+					{
+						"title": "Show Cover",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "gear-cover01",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "gear-cover01",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Generator_Plates_Removeable_02",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Hide Cover",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "gear-cover02",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "gear-cover02",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					},
+					{
+						"title": "Show Cover",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "gear-cover02",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "gear-cover02",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Generator_Plates_Removeable_03",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Hide Cover",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "gear-cover03",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "gear-cover03",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					},
+					{
+						"title": "Show Cover",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "gear-cover03",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "gear-cover03",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Generator_Plates_Removeable_04",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Hide Cover",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "gear-cover04",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "gear-cover04",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					},
+					{
+						"title": "Show Cover",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "gear-cover04",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "gear-cover04",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Hydraulic_ANIM",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Goto Crane",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "hydraulic",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "hydraulic",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Goto Full",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "hydraulic",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "hydraulic",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Goto Auto",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "hydraulic",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "hydraulic",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Pumpe_01_ANIM",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Turn On",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "pump01",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "pump01",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Turn Off",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "pump01",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "pump01",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Pumpe_02_ANIM",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Turn On",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "pump02",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "pump02",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Turn Off",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "pump02",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "pump02",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "Pumpe_03_ANIM",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Turn On",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "pump03",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "pump03",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Turn Off",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "pump03",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "pump03",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+
+]

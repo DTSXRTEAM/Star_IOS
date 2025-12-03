@@ -1,0 +1,2582 @@
+[
+	{
+		"identifier": "MicronFIlter50_01",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Replace filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 9
+							},
+							{
+								"model": "filter01-small",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01-small",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "Filter_Bottom",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove bottom filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 8
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 9
+							}
+						]
+					},
+					{
+						"title": "Refit bottom filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 9
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 8
+							}
+						]
+					},
+					{
+						"title": "Replace bottom filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 9
+							},
+							{
+								"model": "filter01-bottom",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01-bottom",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "SpacerFlanges",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove spacer flange",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 7
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 8
+							}
+						]
+					},
+					{
+						"title": "Refit spacer flange",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 8
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 7
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "Filter_Top",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 6
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 7
+							}
+						]
+					},
+					{
+						"title": "Refit top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 7
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 6
+							}
+						]
+					},
+					{
+						"title": "Replace top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 7
+							},
+							{
+								"model": "filter01-top",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01-top",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 8
+							},
+							{
+								"model": "filter01-top",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01-top",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 9
+							},
+							{
+								"model": "filter01-top",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01-top",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "FilterBowl",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Filterbowl",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 5
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 6
+							}
+						]
+					},
+					{
+						"title": "Refit Filterbowl",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 6
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 5
+							}
+						]
+					},
+					{
+						"title": "Replace & lubricate O-Rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 6
+							},
+							{
+								"model": "filter01-oring",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01-oring",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace & lubricate O-Rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 7
+							},
+							{
+								"model": "filter01-oring",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01-oring",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace & lubricate O-Rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 8
+							},
+							{
+								"model": "filter01-oring",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01-oring",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace & lubricate O-Rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 9
+							},
+							{
+								"model": "filter01-oring",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01-oring",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "Bypass_Valve_GRP",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove bypass valve",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 4
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 5
+							}
+						]
+					},
+					{
+						"title": "Refit bypass valve",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 5
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 4
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "FilterBowlLid",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove lid",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 4
+							}
+						]
+					},
+					{
+						"title": "Refit lid",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 4
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 3
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "BreatherFitting",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Loosen",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Tighten",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Remove airhose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Refit airhose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Remove Fitting",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Refit Fitting",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter01",
+								"key": "index",
+								"value": 2
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+
+		{
+		"identifier": "MicronFIlter50_02",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Replace filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 9
+							},
+							{
+								"model": "filter02-small",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02-small",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "Filter_Bottom 1",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove bottom filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 8
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 9
+							}
+						]
+					},
+					{
+						"title": "Refit bottom filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 9
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 8
+							}
+						]
+					},
+					{
+						"title": "Replace bottom filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 9
+							},
+							{
+								"model": "filter02-bottom",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02-bottom",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "SpacerFlanges 1",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove spacer flange",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 7
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 8
+							}
+						]
+					},
+					{
+						"title": "Refit spacer flange",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 8
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 7
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "Filter_Top 1",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 6
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 7
+							}
+						]
+					},
+					{
+						"title": "Refit top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 7
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 6
+							}
+						]
+					},
+					{
+						"title": "Replace top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 7
+							},
+							{
+								"model": "filter02-top",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02-top",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 8
+							},
+							{
+								"model": "filter02-top",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02-top",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 9
+							},
+							{
+								"model": "filter02-top",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02-top",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "FilterBowl 1",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Filterbowl",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 5
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 6
+							}
+						]
+					},
+					{
+						"title": "Refit Filterbowl",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 6
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 5
+							}
+						]
+					},
+					{
+						"title": "Replace and lubricate O-Rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 6
+							},
+							{
+								"model": "filter02-oring",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02-oring",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace and lubricate O-Rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 7
+							},
+							{
+								"model": "filter02-oring",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02-oring",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace and lubricate O-Rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 8
+							},
+							{
+								"model": "filter02-oring",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02-oring",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace and lubricate O-Rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 9
+							},
+							{
+								"model": "filter02-oring",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02-oring",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "Bypass_Valve_GRP 1",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove bypass valve",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 4
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 5
+							}
+						]
+					},
+					{
+						"title": "Refit bypass valve",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 5
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 4
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "FilterBowlLid 1",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove lid",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 4
+							}
+						]
+					},
+					{
+						"title": "Refit lid",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 4
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 3
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "BreatherFitting 1",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Loosen",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Tighten",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Remove airhose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Refit airhose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Remove Fitting",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Refit Fitting",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter02",
+								"key": "index",
+								"value": 2
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	
+	{
+		"identifier": "MicronFIlter50_03",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Replace filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 9
+							},
+							{
+								"model": "filter03-small",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03-small",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "Filter_Bottom 2",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove bottom filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 8
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 9
+							}
+						]
+					},
+					{
+						"title": "Refit bottom filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 9
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 8
+							}
+						]
+					},
+					{
+						"title": "Replace bottom filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 9
+							},
+							{
+								"model": "filter03-bottom",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03-bottom",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "SpacerFlanges 2",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove spacer flage",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 7
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 8
+							}
+						]
+					},
+					{
+						"title": "Refit spacer flange",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 8
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 7
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "Filter_Top 2",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 6
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 7
+							}
+						]
+					},
+					{
+						"title": "Refit top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 7
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 6
+							}
+						]
+					},
+					{
+						"title": "Replace top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 7
+							},
+							{
+								"model": "filter03-top",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03-top",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 8
+							},
+							{
+								"model": "filter03-top",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03-top",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 9
+							},
+							{
+								"model": "filter03-top",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03-top",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "FilterBowl 2",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Filterbowl",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 5
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 6
+							}
+						]
+					},
+					{
+						"title": "Refit Filterbowl",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 6
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 5
+							}
+						]
+					},
+					{
+						"title": "Replace and lubricate O-Rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 6
+							},
+							{
+								"model": "filter03-oring",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03-oring",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace and lubricate O-Rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 7
+							},
+							{
+								"model": "filter03-oring",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03-oring",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace and lubricate O-Rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 8
+							},
+							{
+								"model": "filter03-oring",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03-oring",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace and lubricate O-Rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 9
+							},
+							{
+								"model": "filter03-oring",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03-oring",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "Bypass_Valve_GRP 2",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove bypass valve",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 4
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 5
+							}
+						]
+					},
+					{
+						"title": "Refit bypass valve",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 5
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 4
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "FilterBowlLid 2",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove lid",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 4
+							}
+						]
+					},
+					{
+						"title": "Refit lid",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 4
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 3
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "BreatherFitting 2",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Loosen",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Tighten",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Remove airhose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Refit airhose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Remove Fitting",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Refit Fitting",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter03",
+								"key": "index",
+								"value": 2
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+
+
+	{
+		"identifier": "MicronFIlter50_04",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Replace filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 9
+							},
+							{
+								"model": "filter04-small",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04-small",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "Filter_Bottom 3",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove bottom filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 8
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 9
+							}
+						]
+					},
+					{
+						"title": "Refit bottom filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 9
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 8
+							}
+						]
+					},
+					{
+						"title": "Replace bottom filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 9
+							},
+							{
+								"model": "filter04-bottom",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04-bottom",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "SpacerFlanges 3",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove spacer flange",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 7
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 8
+							}
+						]
+					},
+					{
+						"title": "Refit spacer flange",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 8
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 7
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "Filter_Top 3",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 6
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 7
+							}
+						]
+					},
+					{
+						"title": "Refit top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 7
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 6
+							}
+						]
+					},
+					{
+						"title": "Replace top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 7
+							},
+							{
+								"model": "filter04-top",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04-top",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 8
+							},
+							{
+								"model": "filter04-top",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04-top",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace top filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 9
+							},
+							{
+								"model": "filter04-top",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04-top",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "FilterBowl 3",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Filterbowl",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 5
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 6
+							}
+						]
+					},
+					{
+						"title": "Refit Filterbowl",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 6
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 5
+							}
+						]
+					},
+					{
+						"title": "Replace and lubricate O-Rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 6
+							},
+							{
+								"model": "filter04-oring",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04-oring",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace and lubricate O-Rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 7
+							},
+							{
+								"model": "filter04-oring",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04-oring",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace and lubricate O-Rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 8
+							},
+							{
+								"model": "filter04-oring",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04-oring",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Replace and lubricate O-Rings",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 9
+							},
+							{
+								"model": "filter04-oring",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04-oring",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "Bypass_Valve_GRP 3",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove bypass valve",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 4
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 5
+							}
+						]
+					},
+					{
+						"title": "Refit bypass valve",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 5
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 4
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "FilterBowlLid 3",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove lid",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 4
+							}
+						]
+					},
+					{
+						"title": "Refit lid",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 4
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 3
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "BreatherFitting 3",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Loosen",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Tighten",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Remove airhose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Refit airhose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Remove Fitting",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Refit Fitting",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "filter04",
+								"key": "index",
+								"value": 2
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+
+
+
+	{
+		"identifier": "FilterBlock_Valve_01",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Open valve",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "drain-valve01",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "drain-valve01",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Close valve",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "drain-valve01",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "drain-valve01",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					}
+				]
+			}
+
+		]
+	},
+	{
+		"identifier": "FilterBlock_Valve_02",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Open valve",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "drain-valve02",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "drain-valve02",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Close valve",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "drain-valve02",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "drain-valve02",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					}
+				]
+			}
+
+		]
+	}
+]

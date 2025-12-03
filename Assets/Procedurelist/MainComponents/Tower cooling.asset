@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3abc1981703fcd4c9b7bb88a4e53fd2, type: 3}
+  m_Name: Tower cooling
+  m_EditorClassIdentifier: 
+  QRModelKey: TCO
+  ComponentName: Tower cooling
+  Procedures:
+  - {fileID: 11400000, guid: 4a91c3f5b1f38b140a010fc96c72d2d8, type: 2}
+  - {fileID: 11400000, guid: ca9f5c4f228bbe345a6149302ada9c6c, type: 2}

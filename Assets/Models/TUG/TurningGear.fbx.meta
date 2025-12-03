@@ -1,0 +1,640 @@
+fileFormatVersion: 2
+guid: faf980e230e8bb24d90ecc7756b3c4ba
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Bolt
+    100002: Bolt_01
+    100004: Bolt_01 1
+    100006: Bolt_02
+    100008: Bolt_02 1
+    100010: Bolt_03
+    100012: Bolt_03 1
+    100014: Bolt_04
+    100016: Bolt_04 1
+    100018: BoltLossing_01
+    100020: BoltLossing_01 1
+    100022: BoltLossing_02
+    100024: BoltLossing_02 1
+    100026: BoltLossing_ANIM_01
+    100028: BoltLossing_ANIM_01 1
+    100030: BoltLossing_ANIM_02
+    100032: BoltLossing_ANIM_02 1
+    100034: BoltLossing_GRP
+    100036: BoltLossing_GRP 1
+    100038: BoltLossing_ZERO_01
+    100040: BoltLossing_ZERO_01 1
+    100042: BoltLossing_ZERO_02
+    100044: BoltLossing_ZERO_02 1
+    100046: BoltRemove_ANIM_01
+    100048: BoltRemove_ANIM_01 1
+    100050: BoltRemove_ANIM_02
+    100052: BoltRemove_ANIM_02 1
+    100054: BoltRemove_GRP
+    100056: BoltRemove_GRP 1
+    100058: BoltRemove_Pivot_01
+    100060: BoltRemove_Pivot_01 1
+    100062: BoltRemove_Pivot_02
+    100064: BoltRemove_Pivot_02 1
+    100066: BoltRemove_ZERO_01
+    100068: BoltRemove_ZERO_01 1
+    100070: BoltRemove_ZERO_02
+    100072: BoltRemove_ZERO_02 1
+    100074: Engine
+    100076: Engine_GRP
+    100078: Engine_Pipes
+    100080: Generator_GRP
+    100082: Generator_Plates
+    100084: Joint_ANIM_Left
+    100086: Joint_ANIM_Right
+    100088: Joint_Static_Left
+    100090: Joint_Static_Right
+    100092: Joints_GRP
+    100094: LockingPin_ANIM
+    100096: LockingPin_ANIM 1
+    100098: LockingPin_Block
+    100100: LockingPin_Block 1
+    100102: LockingPin_GRP
+    100104: LockingPin_GRP 1
+    100106: LockingPin_Handle
+    100108: LockingPin_Handle 1
+    100110: LockingPin_Pin
+    100112: LockingPin_Pin 1
+    100114: LockingPin_ZERO
+    100116: LockingPin_ZERO 1
+    100118: Turning_Gear
+    100120: Turning_Gear 1
+    100122: Turning_Gear_GRP
+    100124: Turning_Gear_ZERO_GRP
+    100126: //RootNode
+    100128: TurningGear_Generator_GRP
+    100130: TurningGear_Left_ANIM
+    100132: TurningGear_Left_Pivot
+    100134: TurningGear_Left_ZERO
+    100136: TurningGear_Pipes
+    100138: TurningGear_Right_ANIM
+    100140: TurningGear_Right_Pivot
+    100142: TurningGear_Right_ZERO
+    100144: TurningGear_Side_01
+    100146: TurningGear_Side_02
+    100148: Washer_01
+    100150: Washer_01 1
+    100152: Washer_02
+    100154: Washer_02 1
+    100156: Washer_03
+    100158: Washer_03 1
+    100160: Washer_04
+    100162: Washer_04 1
+    100164: Wire_Left
+    100166: Wire_Right
+    100168: Wires_Skinned_GRP
+    100170: BoltLossing_ZERO
+    100172: BoltLossing_ZERO 1
+    100174: BoltLossing_ZERO 2
+    100176: BoltLossing_ZERO 3
+    100178: BoltRemove_01
+    100180: BoltRemove_01 1
+    100182: BoltRemove_02
+    100184: BoltRemove_02 1
+    100186: Turning00060
+    100188: Turning00060 1
+    100190: Turning00063
+    100192: Turning00063 1
+    100194: Turning00070
+    100196: Turning00070 1
+    100198: Turning00091
+    100200: Turning00091 1
+    100202: Turning00238
+    100204: Turning00238 1
+    100206: Turning00239
+    100208: Turning00239 1
+    100210: Turning00254
+    100212: Turning00254 1
+    100214: Turning00255
+    100216: Turning00255 1
+    100218: Turning00256
+    100220: Turning00256 1
+    100222: Turning00320
+    100224: Turning00320 1
+    100226: Turning00322
+    100228: Turning00322 1
+    100230: TurningGear_Right
+    100232: TurningGear_Right 1
+    100234: TurningGear_ZERO
+    100236: TurningGear_ZERO 1
+    100238: Wires__AIM_GRP
+    100240: Generator_Base
+    100242: Generator_Plates_Removeable
+    100244: Generator_Plates_Removeable_Bolts
+    100246: Generator_Plates_Removeable_01
+    100248: Generator_Plates_Removeable_02
+    100250: Generator_Plates_Removeable_03
+    100252: Generator_Plates_Removeable_04
+    100254: Turning00323
+    100256: Turning00324
+    100258: Generator_Plates_Removeable_01 1
+    100260: Generator_Plates_Removeable_02 1
+    100262: Generator_Plates_Removeable_03 1
+    100264: Generator_Plates_Removeable_04 1
+    100266: Generator_Plates_Removeable_Bolts_01
+    100268: Generator_Plates_Removeable_Bolts_02
+    100270: Generator_Plates_Removeable_Bolts_03
+    100272: Generator_Plates_Removeable_Bolts_04
+    400000: Bolt
+    400002: Bolt_01
+    400004: Bolt_01 1
+    400006: Bolt_02
+    400008: Bolt_02 1
+    400010: Bolt_03
+    400012: Bolt_03 1
+    400014: Bolt_04
+    400016: Bolt_04 1
+    400018: BoltLossing_01
+    400020: BoltLossing_01 1
+    400022: BoltLossing_02
+    400024: BoltLossing_02 1
+    400026: BoltLossing_ANIM_01
+    400028: BoltLossing_ANIM_01 1
+    400030: BoltLossing_ANIM_02
+    400032: BoltLossing_ANIM_02 1
+    400034: BoltLossing_GRP
+    400036: BoltLossing_GRP 1
+    400038: BoltLossing_ZERO_01
+    400040: BoltLossing_ZERO_01 1
+    400042: BoltLossing_ZERO_02
+    400044: BoltLossing_ZERO_02 1
+    400046: BoltRemove_ANIM_01
+    400048: BoltRemove_ANIM_01 1
+    400050: BoltRemove_ANIM_02
+    400052: BoltRemove_ANIM_02 1
+    400054: BoltRemove_GRP
+    400056: BoltRemove_GRP 1
+    400058: BoltRemove_Pivot_01
+    400060: BoltRemove_Pivot_01 1
+    400062: BoltRemove_Pivot_02
+    400064: BoltRemove_Pivot_02 1
+    400066: BoltRemove_ZERO_01
+    400068: BoltRemove_ZERO_01 1
+    400070: BoltRemove_ZERO_02
+    400072: BoltRemove_ZERO_02 1
+    400074: Engine
+    400076: Engine_GRP
+    400078: Engine_Pipes
+    400080: Generator_GRP
+    400082: Generator_Plates
+    400084: Joint_ANIM_Left
+    400086: Joint_ANIM_Right
+    400088: Joint_Static_Left
+    400090: Joint_Static_Right
+    400092: Joints_GRP
+    400094: LockingPin_ANIM
+    400096: LockingPin_ANIM 1
+    400098: LockingPin_Block
+    400100: LockingPin_Block 1
+    400102: LockingPin_GRP
+    400104: LockingPin_GRP 1
+    400106: LockingPin_Handle
+    400108: LockingPin_Handle 1
+    400110: LockingPin_Pin
+    400112: LockingPin_Pin 1
+    400114: LockingPin_ZERO
+    400116: LockingPin_ZERO 1
+    400118: Turning_Gear
+    400120: Turning_Gear 1
+    400122: Turning_Gear_GRP
+    400124: Turning_Gear_ZERO_GRP
+    400126: //RootNode
+    400128: TurningGear_Generator_GRP
+    400130: TurningGear_Left_ANIM
+    400132: TurningGear_Left_Pivot
+    400134: TurningGear_Left_ZERO
+    400136: TurningGear_Pipes
+    400138: TurningGear_Right_ANIM
+    400140: TurningGear_Right_Pivot
+    400142: TurningGear_Right_ZERO
+    400144: TurningGear_Side_01
+    400146: TurningGear_Side_02
+    400148: Washer_01
+    400150: Washer_01 1
+    400152: Washer_02
+    400154: Washer_02 1
+    400156: Washer_03
+    400158: Washer_03 1
+    400160: Washer_04
+    400162: Washer_04 1
+    400164: Wire_Left
+    400166: Wire_Right
+    400168: Wires_Skinned_GRP
+    400170: BoltLossing_ZERO
+    400172: BoltLossing_ZERO 1
+    400174: BoltLossing_ZERO 2
+    400176: BoltLossing_ZERO 3
+    400178: BoltRemove_01
+    400180: BoltRemove_01 1
+    400182: BoltRemove_02
+    400184: BoltRemove_02 1
+    400186: Turning00060
+    400188: Turning00060 1
+    400190: Turning00063
+    400192: Turning00063 1
+    400194: Turning00070
+    400196: Turning00070 1
+    400198: Turning00091
+    400200: Turning00091 1
+    400202: Turning00238
+    400204: Turning00238 1
+    400206: Turning00239
+    400208: Turning00239 1
+    400210: Turning00254
+    400212: Turning00254 1
+    400214: Turning00255
+    400216: Turning00255 1
+    400218: Turning00256
+    400220: Turning00256 1
+    400222: Turning00320
+    400224: Turning00320 1
+    400226: Turning00322
+    400228: Turning00322 1
+    400230: TurningGear_Right
+    400232: TurningGear_Right 1
+    400234: TurningGear_ZERO
+    400236: TurningGear_ZERO 1
+    400238: Wires__AIM_GRP
+    400240: Generator_Base
+    400242: Generator_Plates_Removeable
+    400244: Generator_Plates_Removeable_Bolts
+    400246: Generator_Plates_Removeable_01
+    400248: Generator_Plates_Removeable_02
+    400250: Generator_Plates_Removeable_03
+    400252: Generator_Plates_Removeable_04
+    400254: Turning00323
+    400256: Turning00324
+    400258: Generator_Plates_Removeable_01 1
+    400260: Generator_Plates_Removeable_02 1
+    400262: Generator_Plates_Removeable_03 1
+    400264: Generator_Plates_Removeable_04 1
+    400266: Generator_Plates_Removeable_Bolts_01
+    400268: Generator_Plates_Removeable_Bolts_02
+    400270: Generator_Plates_Removeable_Bolts_03
+    400272: Generator_Plates_Removeable_Bolts_04
+    2100000: M_TurningGear
+    2100002: M_Engine_Pipes
+    2100004: M_Wires
+    2100006: M_Generator_Plates
+    2100008: M_Shadow
+    2100010: M_Generator_Outer
+    2100012: M_Generator_Rim
+    2100014: M_Generator_Font
+    2100016: M_Bots
+    2100018: M_Engine
+    2300000: Bolt
+    2300002: Bolt_01
+    2300004: Bolt_01 1
+    2300006: Bolt_02
+    2300008: Bolt_02 1
+    2300010: Bolt_03
+    2300012: Bolt_03 1
+    2300014: Bolt_04
+    2300016: Bolt_04 1
+    2300018: Engine
+    2300020: Engine_Pipes
+    2300022: Generator_Plates
+    2300024: LockingPin_Block
+    2300026: LockingPin_Block 1
+    2300028: LockingPin_Handle
+    2300030: LockingPin_Handle 1
+    2300032: LockingPin_Pin
+    2300034: LockingPin_Pin 1
+    2300036: Turning_Gear
+    2300038: Turning_Gear 1
+    2300040: TurningGear_Pipes
+    2300042: TurningGear_Side_01
+    2300044: TurningGear_Side_02
+    2300046: Washer_01
+    2300048: Washer_01 1
+    2300050: Washer_02
+    2300052: Washer_02 1
+    2300054: Washer_03
+    2300056: Washer_03 1
+    2300058: Washer_04
+    2300060: Washer_04 1
+    2300062: Turning00060
+    2300064: Turning00060 1
+    2300066: Turning00063
+    2300068: Turning00063 1
+    2300070: Turning00070
+    2300072: Turning00070 1
+    2300074: Turning00091
+    2300076: Turning00091 1
+    2300078: Turning00238
+    2300080: Turning00238 1
+    2300082: Turning00239
+    2300084: Turning00239 1
+    2300086: Turning00254
+    2300088: Turning00254 1
+    2300090: Turning00255
+    2300092: Turning00255 1
+    2300094: Turning00256
+    2300096: Turning00256 1
+    2300098: Turning00320
+    2300100: Turning00320 1
+    2300102: Turning00322
+    2300104: Turning00322 1
+    2300106: Generator_Base
+    2300108: Generator_Plates_Removeable
+    2300110: Generator_Plates_Removeable_Bolts
+    2300112: Generator_Plates_Removeable_01
+    2300114: Generator_Plates_Removeable_02
+    2300116: Generator_Plates_Removeable_03
+    2300118: Generator_Plates_Removeable_04
+    2300120: Turning00323
+    2300122: Turning00324
+    2300124: Generator_Plates_Removeable_01 1
+    2300126: Generator_Plates_Removeable_02 1
+    2300128: Generator_Plates_Removeable_03 1
+    2300130: Generator_Plates_Removeable_04 1
+    2300132: Generator_Plates_Removeable_Bolts_01
+    2300134: Generator_Plates_Removeable_Bolts_02
+    2300136: Generator_Plates_Removeable_Bolts_03
+    2300138: Generator_Plates_Removeable_Bolts_04
+    2300140: Wire_Left
+    2300142: Wire_Right
+    3300000: Bolt
+    3300002: Bolt_01
+    3300004: Bolt_01 1
+    3300006: Bolt_02
+    3300008: Bolt_02 1
+    3300010: Bolt_03
+    3300012: Bolt_03 1
+    3300014: Bolt_04
+    3300016: Bolt_04 1
+    3300018: Engine
+    3300020: Engine_Pipes
+    3300022: Generator_Plates
+    3300024: LockingPin_Block
+    3300026: LockingPin_Block 1
+    3300028: LockingPin_Handle
+    3300030: LockingPin_Handle 1
+    3300032: LockingPin_Pin
+    3300034: LockingPin_Pin 1
+    3300036: Turning_Gear
+    3300038: Turning_Gear 1
+    3300040: TurningGear_Pipes
+    3300042: TurningGear_Side_01
+    3300044: TurningGear_Side_02
+    3300046: Washer_01
+    3300048: Washer_01 1
+    3300050: Washer_02
+    3300052: Washer_02 1
+    3300054: Washer_03
+    3300056: Washer_03 1
+    3300058: Washer_04
+    3300060: Washer_04 1
+    3300062: Turning00060
+    3300064: Turning00060 1
+    3300066: Turning00063
+    3300068: Turning00063 1
+    3300070: Turning00070
+    3300072: Turning00070 1
+    3300074: Turning00091
+    3300076: Turning00091 1
+    3300078: Turning00238
+    3300080: Turning00238 1
+    3300082: Turning00239
+    3300084: Turning00239 1
+    3300086: Turning00254
+    3300088: Turning00254 1
+    3300090: Turning00255
+    3300092: Turning00255 1
+    3300094: Turning00256
+    3300096: Turning00256 1
+    3300098: Turning00320
+    3300100: Turning00320 1
+    3300102: Turning00322
+    3300104: Turning00322 1
+    3300106: Generator_Base
+    3300108: Generator_Plates_Removeable
+    3300110: Generator_Plates_Removeable_Bolts
+    3300112: Generator_Plates_Removeable_01
+    3300114: Generator_Plates_Removeable_02
+    3300116: Generator_Plates_Removeable_03
+    3300118: Generator_Plates_Removeable_04
+    3300120: Turning00323
+    3300122: Turning00324
+    3300124: Generator_Plates_Removeable_01 1
+    3300126: Generator_Plates_Removeable_02 1
+    3300128: Generator_Plates_Removeable_03 1
+    3300130: Generator_Plates_Removeable_04 1
+    3300132: Generator_Plates_Removeable_Bolts_01
+    3300134: Generator_Plates_Removeable_Bolts_02
+    3300136: Generator_Plates_Removeable_Bolts_03
+    3300138: Generator_Plates_Removeable_Bolts_04
+    3300140: Wire_Left
+    3300142: Wire_Right
+    4300000: TurningGear_Side_01
+    4300002: TurningGear_Pipes
+    4300004: LockingPin_Pin
+    4300006: LockingPin_Handle
+    4300008: LockingPin_Block
+    4300010: Washer_01
+    4300012: Bolt_01
+    4300014: Bolt_02
+    4300016: Washer_02
+    4300018: Bolt_03
+    4300020: Washer_03
+    4300022: Bolt_04
+    4300024: Washer_04
+    4300026: Turning_Gear
+    4300028: Wire_Left
+    4300030: Wire_Right
+    4300032: TurningGear_Side_02
+    4300034: LockingPin_Pin
+    4300036: LockingPin_Handle
+    4300038: LockingPin_Block
+    4300040: Washer_01
+    4300042: Bolt_01
+    4300044: Bolt_02
+    4300046: Washer_02
+    4300048: Bolt_03
+    4300050: Washer_03
+    4300052: Bolt_04
+    4300054: Washer_04
+    4300056: Turning_Gear
+    4300058: Generator_Plates
+    4300060: Bolt
+    4300062: Engine_Pipes
+    4300064: Engine
+    4300066: Turning00254
+    4300068: Turning00256
+    4300070: Turning00255
+    4300072: Turning00060
+    4300074: Turning00320
+    4300076: Turning00070
+    4300078: Turning00239
+    4300080: Turning00091
+    4300082: Turning00238
+    4300084: Turning00322
+    4300086: Turning00063
+    4300088: Turning00254
+    4300090: Turning00256
+    4300092: Turning00255
+    4300094: Turning00060
+    4300096: Turning00320
+    4300098: Turning00070
+    4300100: Turning00239
+    4300102: Turning00091
+    4300104: Turning00238
+    4300106: Turning00322
+    4300108: Turning00063
+    4300110: Generator_Base
+    4300112: Generator_Plates_Removeable
+    4300114: Generator_Plates_Removeable_Bolts
+    4300116: Generator_Plates_Removeable_01
+    4300118: Generator_Plates_Removeable_02
+    4300120: Generator_Plates_Removeable_03
+    4300122: Generator_Plates_Removeable_04
+    4300124: Turning00323
+    4300126: Turning00324
+    4300128: Generator_Plates_Removeable_Bolts_01
+    4300130: Generator_Plates_Removeable_Bolts_02
+    4300132: Generator_Plates_Removeable_Bolts_03
+    4300134: Generator_Plates_Removeable_Bolts_04
+    9500000: //RootNode
+    13700000: Wire_Left
+    13700002: Wire_Right
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Bots
+    second: {fileID: 2100000, guid: 5db0bc3e94bbb5941a2f48e7aa19cd6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Engine
+    second: {fileID: 2100000, guid: c663b68cbe114a9408d000a2eca7d87a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Engine_Pipes
+    second: {fileID: 2100000, guid: e992cb5462212674f8878fddc7e19ea9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Generator_Font
+    second: {fileID: 2100000, guid: 4069adb89020cc642954dbb51dbd6580, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Generator_Outer
+    second: {fileID: 2100000, guid: fbcaf421099961d40929d15eb763d941, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Generator_Plates
+    second: {fileID: 2100000, guid: e9d41aa618b825e46876110989c175c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Generator_Rim
+    second: {fileID: 2100000, guid: 9d6b63e92ef794b46b3e8d940e275d40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Shadow
+    second: {fileID: 2100000, guid: 3f356c3fb31b1ae498cf20043519821a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_TurningGear
+    second: {fileID: 2100000, guid: c622ce6a3df15594ea5899c91c6622bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wires
+    second: {fileID: 2100000, guid: 63ab5f48e3095d049a8275514330afc9, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

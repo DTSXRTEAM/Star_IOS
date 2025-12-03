@@ -1,0 +1,447 @@
+fileFormatVersion: 2
+guid: 03a69e69bdba54a42afc05901b1e46da
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: DrainPoint_Screw
+    100002: HPU 1
+    100004: //RootNode
+    100006: Lid_Off
+    100008: Lid_On
+    100010: SampleContainer
+    100012: SampleContainer_LidOn
+    100014: SamplePart_01
+    100016: SamplePart_02
+    100018: SampleTube
+    100020: Dimmer
+    100022: HPU
+    100024: Oil
+    100026: OlieTube
+    100028: transform1
+    100030: Dipstick_Screw
+    100032: OilTube01
+    100034: OilTube02
+    100036: DipStick_Screw
+    100038: HPU_Insides
+    100040: Rexroth_Cap
+    100042: Rexroth_Filter
+    100044: Rexroth_Screw01
+    100046: Rexroth_Screw02
+    100048: Rexroth_Screw03
+    100050: Rexroth_Screw04
+    100052: Rexroth_Top
+    100054: OilTube03
+    100056: OilTube04
+    100058: OilTube05
+    100060: bezier1
+    100062: bezier2
+    100064: bezier3
+    100066: bezier4
+    100068: bezier5
+    100070: Cruve
+    100072: Filter01
+    100074: Filter01_Cover
+    100076: Filter02
+    100078: Filter02_Cover
+    100080: Filter03
+    100082: Filter03_Cover
+    100084: SamplePart_03
+    100086: SamplePart_04
+    100088: SamplePart_05
+    100090: SamplePart_06
+    100092: SamplePart_07
+    100094: SamplePart_08
+    100096: Curve
+    100098: Filter01_Cover_Seal
+    100100: Filter02_Cover_Seal
+    100102: Filter03_Cover_Seal
+    400000: DrainPoint_Screw
+    400002: HPU 1
+    400004: //RootNode
+    400006: Lid_Off
+    400008: Lid_On
+    400010: SampleContainer
+    400012: SampleContainer_LidOn
+    400014: SamplePart_01
+    400016: SamplePart_02
+    400018: SampleTube
+    400020: Dimmer
+    400022: HPU
+    400024: Oil
+    400026: OlieTube
+    400028: transform1
+    400030: Dipstick_Screw
+    400032: OilTube01
+    400034: OilTube02
+    400036: DipStick_Screw
+    400038: HPU_Insides
+    400040: Rexroth_Cap
+    400042: Rexroth_Filter
+    400044: Rexroth_Screw01
+    400046: Rexroth_Screw02
+    400048: Rexroth_Screw03
+    400050: Rexroth_Screw04
+    400052: Rexroth_Top
+    400054: OilTube03
+    400056: OilTube04
+    400058: OilTube05
+    400060: bezier1
+    400062: bezier2
+    400064: bezier3
+    400066: bezier4
+    400068: bezier5
+    400070: Cruve
+    400072: Filter01
+    400074: Filter01_Cover
+    400076: Filter02
+    400078: Filter02_Cover
+    400080: Filter03
+    400082: Filter03_Cover
+    400084: SamplePart_03
+    400086: SamplePart_04
+    400088: SamplePart_05
+    400090: SamplePart_06
+    400092: SamplePart_07
+    400094: SamplePart_08
+    400096: Curve
+    400098: Filter01_Cover_Seal
+    400100: Filter02_Cover_Seal
+    400102: Filter03_Cover_Seal
+    2100000: lambert2
+    2100002: 'Color #d4cf00ff'
+    2100004: lambert3
+    2100006: lambert1
+    2100008: lambert4
+    2100010: Wires
+    2100012: Metal02
+    2100014: Blue
+    2100016: Metal
+    2100018: Pastic
+    2100020: Gold
+    2100022: BrushedMetal
+    2100024: White
+    2100026: Yellow
+    2100028: M_Glass
+    2100030: M_Lid
+    2100032: M_OilDip
+    2100034: M_Oil
+    2100036: Filter
+    2100038: FilterRings
+    2100040: RedPoint
+    2100042: Brown
+    2100044: lambert17
+    2100046: Popcorn
+    2100048: FlitFliter
+    2300000: DrainPoint_Screw
+    2300002: HPU 1
+    2300004: Lid_Off
+    2300006: Lid_On
+    2300008: SampleContainer
+    2300010: SampleContainer_LidOn
+    2300012: SamplePart_01
+    2300014: SamplePart_02
+    2300016: SampleTube
+    2300018: Dimmer
+    2300020: Oil
+    2300022: OlieTube
+    2300024: Dipstick_Screw
+    2300026: OilTube01
+    2300028: OilTube02
+    2300030: DipStick_Screw
+    2300032: HPU_Insides
+    2300034: Rexroth_Cap
+    2300036: Rexroth_Filter
+    2300038: Rexroth_Screw01
+    2300040: Rexroth_Screw02
+    2300042: Rexroth_Screw03
+    2300044: Rexroth_Screw04
+    2300046: Rexroth_Top
+    2300048: OilTube03
+    2300050: OilTube04
+    2300052: OilTube05
+    2300054: Filter01
+    2300056: Filter01_Cover
+    2300058: Filter02
+    2300060: Filter02_Cover
+    2300062: Filter03
+    2300064: Filter03_Cover
+    2300066: SamplePart_03
+    2300068: SamplePart_04
+    2300070: SamplePart_05
+    2300072: SamplePart_06
+    2300074: SamplePart_07
+    2300076: SamplePart_08
+    2300078: Filter01_Cover_Seal
+    2300080: Filter02_Cover_Seal
+    2300082: Filter03_Cover_Seal
+    3300000: DrainPoint_Screw
+    3300002: HPU 1
+    3300004: Lid_Off
+    3300006: Lid_On
+    3300008: SampleContainer
+    3300010: SampleContainer_LidOn
+    3300012: SamplePart_01
+    3300014: SamplePart_02
+    3300016: SampleTube
+    3300018: Dimmer
+    3300020: Oil
+    3300022: OlieTube
+    3300024: Dipstick_Screw
+    3300026: OilTube01
+    3300028: OilTube02
+    3300030: DipStick_Screw
+    3300032: HPU_Insides
+    3300034: Rexroth_Cap
+    3300036: Rexroth_Filter
+    3300038: Rexroth_Screw01
+    3300040: Rexroth_Screw02
+    3300042: Rexroth_Screw03
+    3300044: Rexroth_Screw04
+    3300046: Rexroth_Top
+    3300048: OilTube03
+    3300050: OilTube04
+    3300052: OilTube05
+    3300054: Filter01
+    3300056: Filter01_Cover
+    3300058: Filter02
+    3300060: Filter02_Cover
+    3300062: Filter03
+    3300064: Filter03_Cover
+    3300066: SamplePart_03
+    3300068: SamplePart_04
+    3300070: SamplePart_05
+    3300072: SamplePart_06
+    3300074: SamplePart_07
+    3300076: SamplePart_08
+    3300078: Filter01_Cover_Seal
+    3300080: Filter02_Cover_Seal
+    3300082: Filter03_Cover_Seal
+    4300000: SamplePart_01
+    4300002: SamplePart_02
+    4300004: DrainPoint_Screw
+    4300006: HPU
+    4300008: SampleContainer
+    4300010: Lid_On
+    4300012: Lid_Off
+    4300014: SampleContainer_LidOn
+    4300016: SampleTube
+    4300018: OlieTube
+    4300020: Dimmer
+    4300022: Oil
+    4300024: OilTube02
+    4300026: OilTube01
+    4300028: Dipstick_Screw
+    4300030: HPU_Insides
+    4300032: Rexroth_Cap
+    4300034: Rexroth_Top
+    4300036: Rexroth_Screw01
+    4300038: Rexroth_Screw02
+    4300040: Rexroth_Screw03
+    4300042: Rexroth_Screw04
+    4300044: DipStick_Screw
+    4300046: Rexroth_Filter
+    4300048: OilTube03
+    4300050: OilTube04
+    4300052: OilTube05
+    4300054: SamplePart_08
+    4300056: SamplePart_07
+    4300058: SamplePart_06
+    4300060: SamplePart_05
+    4300062: SamplePart_04
+    4300064: SamplePart_03
+    4300066: Filter01_Cover
+    4300068: Filter02_Cover
+    4300070: Filter03_Cover
+    4300072: Filter03
+    4300074: Filter02
+    4300076: Filter01
+    4300078: Filter03_Cover_Seal
+    4300080: Filter02_Cover_Seal
+    4300082: Filter01_Cover_Seal
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blue
+    second: {fileID: 2100000, guid: ea7f491bee16593498fde9f1793eecb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brown
+    second: {fileID: 2100000, guid: df38d5c0b562854418cdae63bb7bddb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BrushedMetal
+    second: {fileID: 2100000, guid: ddeceb2f7e80ecb40b0fe4c2a51422a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Filter
+    second: {fileID: 2100000, guid: c6507afb2a052324f8f5c2b34fee086d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FilterRings
+    second: {fileID: 2100000, guid: 19a28186759d95943a4dca55f9f323cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FlitFliter
+    second: {fileID: 2100000, guid: 0bbe5fe6c7e99cd45ad00c04a648248a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gold
+    second: {fileID: 2100000, guid: cf761ae9220da5c439fc645fe5593355, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Glass
+    second: {fileID: 2100000, guid: 4078d5f3a5a19464689685afb27e07ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Lid
+    second: {fileID: 2100000, guid: 8a779b5e2c39c614593a48512a3e6e3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Oil
+    second: {fileID: 2100000, guid: be628767167b63747aeddc39b806a515, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_OilDip
+    second: {fileID: 2100000, guid: 753eccc0874d1054cb7f1d5bd571d8c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: 35d2caa6e097ab0488c33041e798468c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal02
+    second: {fileID: 2100000, guid: 9f1f61e880b791a46b44a1c0e59405d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pastic
+    second: {fileID: 2100000, guid: 8585356cb2ae492459932a2d490e845c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Popcorn
+    second: {fileID: 2100000, guid: 3063ddabdab59634f8c9671cce3bd887, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RedPoint
+    second: {fileID: 2100000, guid: 2f842a125fbe6b348897cf483c100d5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: db25b9c66e14c464a9b480fb0dc33b1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Yellow
+    second: {fileID: 2100000, guid: 59784e7de7cf58d47b46fe214403c57d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: a07b9c84e5a4ef74295f259a15167d59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert17
+    second: {fileID: 2100000, guid: edfb5563013d3c84e9e9e409f91ee5f7, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Popcorn
+    second: {fileID: 2800000, guid: 9047df3c155948e4795090a1e3175005, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

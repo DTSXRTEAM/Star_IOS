@@ -1,0 +1,124 @@
+[
+	// Rexroth cap
+	{
+		"identifier": "Rexroth_Cap",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove top cover bolts",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter-state",
+								"key": "bolts",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Remove top cover",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter-state",
+								"key": "bolts",
+								"value": 0
+							},
+							{
+								"model": "filter-state",
+								"key": "cover",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Replace top cover",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter-state",
+								"key": "cover",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit top cover bolts",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter-state",
+								"key": "cover",
+								"value": 1
+							},
+							{
+								"model": "filter-state",
+								"key": "bolts",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "filter",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	// Rexroth filter
+	{
+		"identifier": "Rexroth_Filter",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Replace filter",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "filter-clean",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "filter-clean",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}					
+				]
+			}
+		]
+	}
+]

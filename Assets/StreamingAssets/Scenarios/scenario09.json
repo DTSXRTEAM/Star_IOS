@@ -1,0 +1,166 @@
+[
+	{
+		"identifier": "CoolantCap",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Cap",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tank-cap",
+								"key": "enabled",
+								"value": true
+							}
+						],
+						"actions": [
+							{
+								"model": "tank-cap",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					},
+					{ 
+						"title": "Refit Cap",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tank-cap",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "tank-cap",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "CoolantBase",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Add 5L coolant",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tank-cap",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "incr05",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Add 2L coolant",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tank-cap",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "incr02",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Add 1L coolant",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tank-cap",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "incr01",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Remove 1L coolant",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tank-cap",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "decr01",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Remove 2L coolant",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tank-cap",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "decr02",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Remove 5L coolant",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "tank-cap",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "decr05",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

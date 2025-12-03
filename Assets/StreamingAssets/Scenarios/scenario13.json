@@ -1,0 +1,357 @@
+[
+	{
+		"identifier": "OilBarrel",
+		"tools": [
+			{
+				"title": "drum-tool",
+				"toolactions": [
+					{
+						"title": "Place Oil Drum",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "oil-drum",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "oil-drum",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "toolbox",
+								"key": "tool",
+								"value": "pointer"
+							}
+						]
+					},
+					{
+						"title": "Remove Oil Drum",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "oil-drum",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "oil-drum",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "toolbox",
+								"key": "tool",
+								"value": "pointer"
+							}
+						]
+					}
+				]
+			},
+			{
+				"title": "hose-tool",
+				"toolactions": [
+					{
+						"title": "Insert Hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "oil-drum",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "oil-drum",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Remove Hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "oil-drum",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "oil-drum",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "FillPlug",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Fill Plug",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "fill-plug",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "fill-plug",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit Fill Plug",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "fill-plug",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "fill-plug",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}			
+		]
+	},
+	{
+		"identifier": "DrainPlug",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Drain Plug",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "drain-plug",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "drain-plug",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit Drain Plug",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "drain-plug",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "drain-plug",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "DrainPlugHole",
+		"tools": [
+			{
+				"title": "hose-tool",
+				"toolactions": [
+					{
+						"title": "Attach Hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "drain-plug",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "drain-plug",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Detach Hose",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "drain-plug",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "drain-plug",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "FillPlugHole",
+		"tools": [
+			{
+				"title": "pump-tool",
+				"toolactions": [
+					{
+						"title": "Attach Pump",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "fill-plug",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "fill-plug",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Detach Pump",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "fill-plug",
+								"key": "index",
+								"value": 2
+							},
+							{
+								"model": "pump",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "fill-plug",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "MagneticPlug",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Magentic Plug",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "mag-plug",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "mag-plug",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Refit Magentic Plug",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "mag-plug",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "mag-plug",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Clean Magentic Plug",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "mag-cleaned",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "mag-plug",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "mag-cleaned",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

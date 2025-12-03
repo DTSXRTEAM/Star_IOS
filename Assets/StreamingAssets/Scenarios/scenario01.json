@@ -1,0 +1,877 @@
+[
+	// QM005
+	{
+		"identifier": "DrainPoint",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Cap",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Replace Cap",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			},
+			{
+				"title": "hose-tool",
+				"toolactions": [
+					{
+						"title": "Attach hose",
+						"conditions": [
+							{
+								"model": "hose-state",
+								"key": "connected",
+								"value": 0
+							},
+							{
+								"model": "qm005-state",
+								"key": "cap",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Attach hose",
+						"conditions": [
+							{
+								"model": "hose-state",
+								"key": "connected",
+								"value": 3
+							},
+							{
+								"model": "qm005-state",
+								"key": "cap",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Detach hose",
+						"conditions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Remove Cap",
+						"conditions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Replace Cap",
+						"conditions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "qm005",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "M_Glass",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Remove lid",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 4
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 5
+							}
+						]
+					},
+					{
+						"title": "Remove lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 7
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 8
+							}
+						]
+					},
+					{
+						"title": "Replace lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Replace lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 5
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 4
+							}
+						]
+					},
+					{
+						"title": "Replace lid",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 8
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 7
+							}
+						]
+					},
+					{
+						"title": "Shake bottle",
+						"conditions": [
+							{
+								"model": "shake-ok",
+								"key": "value",
+								"value": 1
+							},
+							{
+								"model": "bottle-cleaned",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "shake",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Dispose of oil",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 5
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Dispose of oil",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 8
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 2
+							}
+						]
+					}
+
+				]
+			},
+			{
+				"title": "bottle-tool",
+				"toolactions": [
+					{
+						"title": "Remove bottle",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			},
+			{
+				"title": "hose-tool",
+				"toolactions": [
+					{
+						"title": "Insert sample hose",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 2
+							},
+							{
+								"model": "qm005-state",
+								"key": "hose",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Insert sample hose",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 5
+							},
+							{
+								"model": "qm005-state",
+								"key": "hose",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 4
+							}
+						]
+					},
+					{
+						"title": "Remove sample hose",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Remove sample hose",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 6
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 5
+							}
+						]
+					},
+					{
+						"title": "Remove sample hose",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 9
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 8
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	// BOTTLE
+	{
+		"identifier": "SampleContainer",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove cap",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Remove cap",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 6
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 5
+							}
+						]
+					},
+					{
+						"title": "Re-fit cap",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Re-fit cap",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 5
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 6
+							}
+						]
+					},
+					{
+						"title": "Shake bottle",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 5
+							},
+							{
+								"model": "bottle-cleaned",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "shake",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Shake bottle",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 6
+							},
+							{
+								"model": "bottle-cleaned",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "shake",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Dispose of oil",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 5
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 2
+							}
+						]
+					}
+				]
+			},
+			{
+				"title": "hose-tool",
+				"toolactions": [
+					{
+						"title": "Insert sample hose",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 2
+							},
+							{
+								"model": "qm005-state",
+								"key": "hose",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 3
+							}
+						]
+					},
+					{
+						"title": "Insert sample hose",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 5
+							},
+							{
+								"model": "qm005-state",
+								"key": "hose",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 4
+							}
+						]
+					},
+					{
+						"title": "Remove sample hose",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 3
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Remove sample hose",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 4
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 5
+							}
+						]
+					}
+
+				]
+			},
+			{
+				"title": "bottle-tool",
+				"toolactions": [
+					{
+						"title": "Remove sample bottle",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "toolbox",
+								"key": "tool",
+								"value": "pointer"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	// XM004
+	{
+		"identifier": "XM004",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Cap",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "xm004",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "xm004",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Replace Cap",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "xm004",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "xm004",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			},
+			{
+				"title": "hose-tool",
+				"toolactions": [
+					{
+						"title": "Attach hose",
+						"conditions": [
+							{
+								"model": "xm004",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "xm004",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Detach hose",
+						"conditions": [
+							{
+								"model": "xm004",
+								"key": "index",
+								"value": 2
+							}
+						],
+						"actions": [
+							{
+								"model": "xm004",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Remove Cap",
+						"conditions": [
+							{
+								"model": "xm004",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "xm004",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Replace Cap",
+						"conditions": [
+							{
+								"model": "xm004",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "xm004",
+								"key": "index",
+								"value": 0
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	// BOTTLE PLACEMENT AREA
+	{
+		"identifier": "SampleContainerArea",
+		"tools": [
+			{
+				"title": "bottle-tool",
+				"toolactions": [
+					{
+						"title": "Place sample bottle",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 0
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "toolbox",
+								"key": "tool",
+								"value": "pointer"
+							}
+						]
+					},
+					{
+						"title": "Remove sample bottle",
+						"conditions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 1
+							}
+						],
+						"actions": [
+							{
+								"model": "bottle",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "toolbox",
+								"key": "tool",
+								"value": "pointer"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

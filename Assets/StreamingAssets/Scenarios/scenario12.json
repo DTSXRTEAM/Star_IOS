@@ -1,0 +1,216 @@
+[
+	{
+		"identifier": "Lock_Hinge",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Remove Padlock",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "locking-tab",
+								"key": "index",
+								"value": 2
+							},
+							{
+								"model": "pin-stuck",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "locking-tab",
+								"key": "index",
+								"value": 1
+							}
+						]
+					},
+					{
+						"title": "Add Padlock",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "locking-tab",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "pin-stuck",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "locking-tab",
+								"key": "index",
+								"value": 2
+							}
+						]
+					},
+					{
+						"title": "Unlock",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "locking-tab",
+								"key": "index",
+								"value": 1
+							},
+							{
+								"model": "pin-stuck",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "locking-tab",
+								"key": "index",
+								"value": 0
+							}
+						]
+					},
+					{
+						"title": "Lock",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "locking-tab",
+								"key": "index",
+								"value": 0
+							},
+							{
+								"model": "pin-stuck",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "locking-tab",
+								"key": "index",
+								"value": 1
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "PowerBox",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Start Pump",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "electric-pump",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "pin-stuck",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "electric-pump",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Stop Pump",
+						"autorun": false,
+						"conditions": [
+							{
+								"model": "electric-pump",
+								"key": "enabled",
+								"value": true
+							},
+							{
+								"model": "pin-stuck",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "electric-pump",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"identifier": "BreakButton",
+		"tools": [
+			{
+				"title": "pointer",
+				"toolactions": [
+					{
+						"title": "Apply Brake",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "brake",
+								"key": "enabled",
+								"value": false
+							},
+							{
+								"model": "pin-stuck",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "brake",
+								"key": "enabled",
+								"value": true
+							}
+						]
+					},
+					{
+						"title": "Remove Brake",
+						"autorun": true,
+						"conditions": [
+							{
+								"model": "brake",
+								"key": "enabled",
+								"value": true
+							},
+							{
+								"model": "pin-stuck",
+								"key": "enabled",
+								"value": false
+							}
+						],
+						"actions": [
+							{
+								"model": "brake",
+								"key": "enabled",
+								"value": false
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

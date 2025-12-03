@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1744405148293752}
+  m_IsPrefabParent: 1
+--- !u!1 &1744405148293752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4364852179553822}
+  - component: {fileID: 114302826494743796}
+  - component: {fileID: 114305730158786890}
+  - component: {fileID: 114913343874276470}
+  - component: {fileID: 114416090563991996}
+  m_Layer: 0
+  m_Name: ARKit Handler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4364852179553822
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1744405148293752}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114302826494743796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1744405148293752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a580838551a27447a21a97849e94a66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arOriginPrefab: {fileID: 1386153068525266, guid: 7463832888665504e84fec29a3c5a124,
+    type: 2}
+  groundPointerPrefab: {fileID: 1776587197774502, guid: d246edc3ed5b5c044a211e286dc210c7,
+    type: 2}
+  arOriginPosition: {fileID: 11400000, guid: 5b78812ccba303f40a8c54a5e7de3316, type: 2}
+  useARCameraScaling: {fileID: 11400000, guid: 0a8dba397934c464894d7490844ecfeb, type: 2}
+  OnPlaneFoundGameEvent: {fileID: 11400000, guid: 073bbb698902bec4f919815ffba26b9a,
+    type: 2}
+  OnModelPlacedGameEvent: {fileID: 11400000, guid: 1057ef2b73c774bd6b71dc747dffb70f,
+    type: 2}
+  OnImageFoundGameEvent: {fileID: 11400000, guid: 1629bf95903f30e40929b0dd542d7c8b,
+    type: 2}
+  arSettings: {fileID: 11400000, guid: 579aa2cf806d60044bc3226ce649203f, type: 2}
+  imageTrackingType: {fileID: 11400000, guid: 38d4e63374ae2e74eba7cd7c66cc0dc4, type: 2}
+  verticalSurfaceTrackingType: {fileID: 11400000, guid: 8206ad1b89be61f45bd92dc62a723697,
+    type: 2}
+  horizontalSurfaceTrackingType: {fileID: 11400000, guid: f6acb15d5f16cf04c99f495c0e4b0f90,
+    type: 2}
+  arOrigin: {fileID: 0}
+--- !u!114 &114305730158786890
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1744405148293752}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 462d46d2423bb4f738d2497a397b1590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_camera: {fileID: 0}
+  startAlignment: 0
+  planeDetection: 0
+  detectionImages: {fileID: 11400000, guid: a0bb98f85ee68584faa7edce9d8e4cbc, type: 2}
+  getPointCloud: 1
+  enableLightEstimation: 0
+  enableAutoFocus: 1
+--- !u!114 &114416090563991996
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1744405148293752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e839e4c12473014b9b3d3faccc0f61d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 74522e4d33d3b7b42ad836dec035dfb9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114302826494743796}
+        m_MethodName: RepositionModel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: ObjectEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &114913343874276470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1744405148293752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e839e4c12473014b9b3d3faccc0f61d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 29fe31c80734d4462995f429160f8697, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114302826494743796}
+        m_MethodName: PlaceModel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: ObjectEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

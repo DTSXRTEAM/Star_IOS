@@ -11,4 +11,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/main.unity
     guid: c5d3db057135873418ec97fc3e80e97d
-  m_configObjects: {}
+  m_configObjects:
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: d139e7bcf351c4d0e8384d1bf20c62a2,
+      type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 9f5aad61c68824b539589ad86fa44865,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 09b70c067acdf4288931ca330c4d5202,
+      type: 2}
+  m_UseUCBPForAssetBundles: 0

@@ -419,7 +419,7 @@ PrefabInstance:
     - target: {fileID: 114939446366399424, guid: 7e3f16a6f6303419cbd9837f6c746de4,
         type: 3}
       propertyPath: urlOnStart
-      value: https://www.google.com
+      value: http://192.168.1.55:8031/plugins/service-panel
       objectReference: {fileID: 0}
     - target: {fileID: 114939446366399424, guid: 7e3f16a6f6303419cbd9837f6c746de4,
         type: 3}

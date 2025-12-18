@@ -15,9 +15,9 @@
 //  arising from, out of or in connection with the software or the use of other dealing in the software.
 //
 using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 using System;
+using UniWebViewExternal;
 
 /// <summary>
 /// A listener script for message sent from native side of UniWebView.
@@ -47,24 +47,35 @@ public class UniWebViewNativeListener: MonoBehaviour {
 
     /// <summary>
     /// The web view holder of this listener.
-    /// It will be linked to original web view so you should never set it yourself.
+    /// It will be linked to original web view in web view context, so you should never set it yourself.
+    /// Either `webView` or `safeBrowsing` will be valid in this listener.
     /// </summary>
     [HideInInspector]
     public UniWebView webView;
+
+    // The safe browsing of this listener.
+    /// It will be linked to original safe browsing in browsing context, so you should never set it yourself.
+    /// Either `webView` or `safeBrowsing` will be valid in this listener.
+    [HideInInspector]
+    public UniWebViewSafeBrowsing safeBrowsing;
+
+    [HideInInspector]
+    public UniWebViewAuthenticationSession session;
 
     /// <summary>
     /// Name of current listener. This is a UUID string by which native side could use to find 
     /// the message destination.
     /// </summary>
-    public string Name {
-        get {
-            return gameObject.name;
-        }
-    }
+    public string Name => gameObject.name;
 
     public void PageStarted(string url) {
         UniWebViewLogger.Instance.Info("Page Started Event. Url: " + url);
         webView.InternalOnPageStarted(url);
+    }
+
+    public void PageCommitted(string url) {
+        UniWebViewLogger.Instance.Info("Page Commited Event. Url: " + url);
+        webView.InternalOnPageCommitted(url);
     }
 
     public void PageFinished(string result) {
@@ -77,6 +88,13 @@ public class UniWebViewNativeListener: MonoBehaviour {
         UniWebViewLogger.Instance.Info("Page Error Received Event. Result: " + result);
         var payload = JsonUtility.FromJson<UniWebViewNativeResultPayload>(result);
         webView.InternalOnPageErrorReceived(payload);
+    }
+
+    public void PageProgressChanged(string result) {
+        float progress;
+        if (float.TryParse(result, out progress)) {
+            webView.InternalOnPageProgressChanged(progress);
+        }
     }
 
     public void ShowTransitionFinished(string identifer) {
@@ -112,16 +130,6 @@ public class UniWebViewNativeListener: MonoBehaviour {
         webView.InternalOnMessageReceived(result);
     }
 
-    public void WebViewKeyDown(string keyCode) {
-        UniWebViewLogger.Instance.Info("Web View Key Down: " + keyCode);
-        int code;
-        if (int.TryParse(keyCode, out code)) {
-            webView.InternalOnWebViewKeyDown(code);
-        } else {
-            UniWebViewLogger.Instance.Critical("Failed in converting key code: " + keyCode);
-        }
-    }
-
     public void WebViewDone(string param) {
         UniWebViewLogger.Instance.Info("Web View Done Event.");
         webView.InternalOnShouldClose();
@@ -129,16 +137,87 @@ public class UniWebViewNativeListener: MonoBehaviour {
 
     public void WebContentProcessDidTerminate(string param) {
         UniWebViewLogger.Instance.Info("Web Content Process Terminate Event.");
-        webView.InternalWebContentProcessDidTerminate();
+        webView.InternalOnWebContentProcessDidTerminate();
+    }
+
+    public void SafeBrowsingEvent(string param) {
+        var details = string.IsNullOrEmpty(param) ? "(no payload)" : param;
+        UniWebViewLogger.Instance.Info("Safe Browsing Event. Payload: " + details);
+        safeBrowsing.InternalSafeBrowsingEvent(param);
+    }
+
+    public void MultipleWindowOpened(string param) {
+        UniWebViewLogger.Instance.Info("MultipleWindowOpened Event. Multi Window: " + param);
+        webView.InternalOnMultipleWindowOpened(param);
+    }
+
+    public void MultipleWindowClosed(string param) {
+        UniWebViewLogger.Instance.Info("MultipleWindowClose Event. Multi Window: " + param);
+        webView.InternalOnMultipleWindowClosed(param);
+    }
+
+    public void FileDownloadStarted(string result) {
+        UniWebViewLogger.Instance.Info("FileDownloadStarted Event. Result: " + result);
+
+        var payload = JsonUtility.FromJson<UniWebViewNativeResultPayload>(result);
+        webView.InternalOnFileDownloadStarted(payload);
+    }
+
+    public void FileDownloadFinished(string result) {
+        UniWebViewLogger.Instance.Info("FileDownloadFinished Event. Result: " + result);
+
+        var payload = JsonUtility.FromJson<UniWebViewNativeResultPayload>(result);
+        webView.InternalOnFileDownloadFinished(payload);
+    }
+
+    public void CaptureSnapshotFinished(string result) {
+        UniWebViewLogger.Instance.Info("CaptureSnapshotFinished Event. Result: " + result);
+        
+        var payload = JsonUtility.FromJson<UniWebViewNativeResultPayload>(result);
+        webView.InternalOnCaptureSnapshotFinished(payload);
+    }
+
+    public void AuthFinished(string result) {
+        UniWebViewLogger.Instance.Info("Auth Session Finished. Url: " + result);
+        session.InternalAuthenticationFinished(result);
+    }
+
+    public void AuthErrorReceived(string result) {
+        UniWebViewLogger.Instance.Info("Auth Session Error Received. Result: " + result);
+        var payload = JsonUtility.FromJson<UniWebViewNativeResultPayload>(result);
+        session.InternalAuthenticationErrorReceived(payload);
+    }
+
+    public void SnapshotRenderingStarted(string identifier) {
+        UniWebViewLogger.Instance.Info("Snapshot Rendering Started Event. Identifier: " + identifier);
+        webView.InternalOnSnapshotRenderingStarted(identifier);
+    }
+    
+    public void GeneralCallback(string identifier) {
+        UniWebViewLogger.Instance.Info("General Callback Event. Identifier: " + identifier);
+        webView.InternalOnGeneralCallback(identifier);
+    }
+
+    private void OnDestroy() {
+        UniWebViewLogger.Instance.Verbose("Native listener destroyed: " + Name);
+        webView = null;
+        safeBrowsing = null;
+        session = null;
     }
 }
 
 /// <summary>
-/// A payload reveived from native side. It contains information to identify the message sender,
+/// A payload received from native side. It contains information to identify the message sender,
 /// as well as some necessary field to bring data from native side to Unity.
 /// </summary>
 [System.Serializable]
 public class UniWebViewNativeResultPayload {
+
+    /// <summary>
+    /// The key in `Extra` dictionary which contains the failing URL, if available.
+    /// </summary>
+    public const string ExtraFailingURLKey = "failingURL";
+    
     /// <summary>
     /// The identifier bound to this payload. It would be used internally to identify the callback.
     /// </summary>
@@ -151,6 +230,28 @@ public class UniWebViewNativeResultPayload {
     /// <summary>
     /// Return value or data from native. You should look at 
     /// corresponding APIs to know what exactly contained in this.
+    ///
+    /// Usually it is a string value represents the reason or a small piece of data related to the result. 
     /// </summary>
     public string data;
+
+    /// <summary>
+    /// The extra data from native side. It is a JSON string and could be parsed to a dictionary.
+    ///
+    /// Usually you do not access to this value directly. Instead, use `Extra` property to get the parsed dictionary.
+    /// </summary>
+    public string extra;
+    
+    /// <summary>
+    /// The extra data from native side, in dictionary format. If there is no extra data provided, this will be null.
+    /// Otherwise, it contains values passed from native side.
+    /// </summary>
+    public Dictionary<string, object> Extra {
+        get {
+            if (String.IsNullOrEmpty(extra)) {
+                return null;
+            }
+            return Json.Deserialize(extra) as Dictionary<string, object>;
+        }
+    }
 }

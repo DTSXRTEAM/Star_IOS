@@ -23,7 +23,8 @@ public class HMIController : ToolDialogController
 			uniWebViewScript = WebView.GetComponent<UniWebView>();
 
 			var HMIUrl = NetworkManager.Instance.ServerUrl + "/plugins/service-panel";
-			uniWebViewScript.urlOnStart = HMIUrl;
+			uniWebViewScript.Load(HMIUrl);
+			Debug.Log(HMIUrl);
 		}
 	}
 

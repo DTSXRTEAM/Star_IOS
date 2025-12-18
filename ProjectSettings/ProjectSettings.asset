@@ -9,7 +9,7 @@ PlayerSettings:
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
   defaultScreenOrientation: 4
-  targetDevice: 1
+  targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Cadepeople A/S
@@ -188,8 +188,8 @@ PlayerSettings:
   StripUnusedMeshComponents: 1
   strictShaderVariantMatching: 0
   VertexChannelCompressionMask: 4054
-  iPhoneSdkVersion: 988
-  iOSSimulatorArchitecture: 0
+  iPhoneSdkVersion: 989
+  iOSSimulatorArchitecture: 1
   iOSTargetOSVersionString: 13.0
   tvOSSdkVersion: 0
   tvOSSimulatorArchitecture: 0

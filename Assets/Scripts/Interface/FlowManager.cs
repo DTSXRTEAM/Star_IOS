@@ -28,7 +28,8 @@ public class FlowManager : CPEventListener
 		
 		screenFadeEvent?.Raise(true);
 
-		var imageName = (string)val;
+		//var imageName = (string)val;
+		var imageName = "group-1";
 		Debug.Log("Image found: " + imageName);
 		var setup = componentSetups.FirstOrDefault(e => e.imageName == imageName);
 		if (setup != null)

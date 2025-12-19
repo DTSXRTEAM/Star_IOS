@@ -13,7 +13,7 @@ public class ObjectRotationTableListener : CPEventListener {
 	[SerializeField] private float TargetAngle;
 	[SerializeField] private float RPM;
 
-	private bool stopped;
+	public bool stopped;
 
 	private void Awake()
 	{

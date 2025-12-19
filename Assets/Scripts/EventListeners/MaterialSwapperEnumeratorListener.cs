@@ -9,7 +9,7 @@ public class MaterialSwapperEnumeratorListener : CPEventListener
 	[SerializeField] private List<Material> Materials;
 	[SerializeField] private int MaterialNumber = 0;
 
-	private Material mat = null;
+	public Material mat = null;
 
 	private HighLightComponent hightlightComponentScript = null;
 

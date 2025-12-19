@@ -12,7 +12,7 @@ public class ObjectRotationRPMProbeListener : CPEventListener {
 	private float TargetAngle;
 	private float RPM;
 
-	private bool stopped;
+	public bool stopped;
 
 	private void Awake()
 	{

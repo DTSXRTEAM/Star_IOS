@@ -53,7 +53,7 @@ public class InteractionManager : CPEventListener {
 			string[] pages = uri.Split('/');
 			int page = pages.Length - 1;
 
-			if (webRequest.isNetworkError)
+			if (webRequest.result == UnityWebRequest.Result.ConnectionError || webRequest.result == UnityWebRequest.Result.ProtocolError)
 			{
 				Debug.Log(pages[page] + ": Error: " + webRequest.error);
 			}

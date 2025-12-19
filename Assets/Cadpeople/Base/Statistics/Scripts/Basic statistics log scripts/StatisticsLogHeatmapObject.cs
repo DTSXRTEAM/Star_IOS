@@ -17,14 +17,14 @@ namespace Cadpeople.Base.Statistics
         private void OnEnable()
         {
             myScript = (StatisticsLogHeatmapObject)target;
-            
+
         }
-        
+
         public override void OnInspectorGUI()
         {
 
-            EditorGUILayout.LabelField("Current objects being logged (in current scene): " + FindObjectsOfType<StatisticsLogHeatmapObject>().Length.ToString());
-            
+            EditorGUILayout.LabelField("Current objects being logged (in current scene): " + Object.FindObjectsByType<StatisticsLogHeatmapObject>(FindObjectsSortMode.None).Length.ToString());
+
             DrawDefaultInspector();
 
             if (myScript.id < 1 || myScript.id > 255)

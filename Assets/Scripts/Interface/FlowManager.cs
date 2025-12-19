@@ -6,6 +6,8 @@ using System.Linq;
 using UnityEngine.Networking;
 using Newtonsoft.Json;
 using SimulatorInterface;
+using System.Net;
+using UnityEditor.Purchasing;
 
 public class FlowManager : CPEventListener
 {
@@ -58,13 +60,12 @@ public class FlowManager : CPEventListener
 		www.SetRequestHeader("Accept", "application/json");
 		www.SetRequestHeader("Authorization", "Basic " + encoded);
 		yield return www.SendWebRequest();
-
-		if (www.isNetworkError || www.isHttpError)
-		{
-			Debug.Log(www.error);
-		}
-		else
-		{
+        if (www.result == UnityWebRequest.Result.ConnectionError || www.result == UnityWebRequest.Result.ProtocolError)
+        {
+            Debug.Log(www.error);
+        }
+        else
+        {
 			ComponentManager.Instance.SetCompleteToolbox(www.downloadHandler.text);
 			
 			Helper.FireEventInMainThread(modelChangedEvent, setup);
@@ -84,14 +85,13 @@ public class FlowManager : CPEventListener
 		www.SetRequestHeader("Accept", "application/json");
 		www.SetRequestHeader("Authorization", "Basic " + encoded);
 		yield return www.SendWebRequest();
-
-		if (www.isNetworkError || www.isHttpError)
-		{
-			Debug.Log(www.error);
-		}
-		else
-		{
-			// Check version
+        if (www.result == UnityWebRequest.Result.ConnectionError || www.result == UnityWebRequest.Result.ProtocolError)
+        {
+            Debug.Log(www.error);
+        }
+        else
+        {
+            // Check version
 			ServerSettings settings = JsonConvert.DeserializeObject<ServerSettings>(www.downloadHandler.text);
 			string[] serverVersion = settings.version.Split('.');
 			string[] clientVersion = Application.version.Split('.');

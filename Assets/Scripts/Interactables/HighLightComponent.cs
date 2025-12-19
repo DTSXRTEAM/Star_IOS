@@ -11,12 +11,13 @@ public class HighLightComponent : CPEventListener
 
 	private Material[] OrgMaterials;
 
-	private Material mat = null;
+	public Material mat = null;
 
 	private void Awake()
 	{
 		OrgMaterials = GetComponent<Renderer>().materials;
-	}
+		mat = null;
+    }
 
 	public override void OnEventRaised(object par)
 	{

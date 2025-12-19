@@ -39,10 +39,10 @@ public class DialogTable : Singleton<DialogTable> {
 			string[] pages = uri.Split('/');
 			int page = pages.Length - 1;
 
-			if (webRequest.isNetworkError)
-			{
-				Debug.Log(pages[page] + ": Error: " + webRequest.error);
-			}
+			if(webRequest.result == UnityWebRequest.Result.ConnectionError || webRequest.result == UnityWebRequest.Result.ProtocolError)
+            {
+                Debug.Log(pages[page] + ": Error: " + webRequest.error);
+            }
 			else
 			{
 				try

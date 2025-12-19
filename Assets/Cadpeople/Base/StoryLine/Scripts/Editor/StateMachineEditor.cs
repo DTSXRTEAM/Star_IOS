@@ -14,8 +14,8 @@ namespace Cadpeople.Storyline
 
 
         Statemachine statemachine;
-        bool editModeEnabled = false;
-        bool addingNewState = false;
+        public bool editModeEnabled = false;
+        public bool addingNewState = false;
 
 
         //public Color stateColor;
@@ -578,7 +578,8 @@ namespace Cadpeople.Storyline
 
         public static MonoScript[] GetScriptAssetsOfType<T>()
         {
-            MonoScript[] scripts = (MonoScript[])UnityEngine.Object.FindObjectsOfTypeAll(typeof(MonoScript));
+            // Updated to use Resources.FindObjectsOfTypeAll instead of Object.FindObjectsOfTypeAll  
+            MonoScript[] scripts = (MonoScript[])Resources.FindObjectsOfTypeAll(typeof(MonoScript));
 
             List<MonoScript> result = new List<MonoScript>();
 

@@ -10,7 +10,7 @@ public class EnumeratorObjectEnableListener : CPEventListener
 {
 	[SerializeField] private string ComponentName;
 	[SerializeField] private List<string> EnabledIndexes;
-	[SerializeField] private new GameObject ObjectToEnable;
+	[SerializeField] private GameObject ObjectToEnable;
 
 	[SerializeField] float delay = 0;
 

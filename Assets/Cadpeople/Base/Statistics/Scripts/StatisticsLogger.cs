@@ -248,7 +248,7 @@ namespace Cadpeople.Base.Statistics
             yield return webRequest.SendWebRequest();
 
             // Handle error or success
-            if (webRequest.isNetworkError || webRequest.isHttpError)
+            if (webRequest.result == UnityWebRequest.Result.ConnectionError || webRequest.result == UnityWebRequest.Result.ProtocolError)
             {
                 Debug.Log("Error sending statistics to server on " + url + ". Message: " + webRequest.downloadHandler.text);
                 ErrorCallback();

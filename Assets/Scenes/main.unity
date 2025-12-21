@@ -382,7 +382,19 @@ MonoBehaviour:
   Event: {fileID: 11400000, guid: 7129e8b3654fc9c4cbe040ecf0080427, type: 2}
   Response:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114913344448044410}
+        m_TargetAssemblyTypeName: ARImageRescanController, Assembly-CSharp
+        m_MethodName: OnRescanPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &94334493
 GameObject:
   m_ObjectHideFlags: 0
@@ -7998,7 +8010,6 @@ GameObject:
   - component: {fileID: 2004885409}
   - component: {fileID: 2004885412}
   - component: {fileID: 2004885411}
-  - component: {fileID: 2004885410}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -8022,27 +8033,6 @@ Transform:
   - {fileID: 1076192911}
   m_Father: {fileID: 94334494}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2004885410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2004885408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f41911341df3f014d8ceb156a1d1d4ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 1629bf95903f30e40929b0dd542d7c8b, type: 2}
-  manager: {fileID: 2004885411}
-  prefabs:
-  - imageName: group-1
-    prefab: {fileID: 8127396611883947309, guid: c2612ea7365466e4d97629a0b4860375,
-      type: 3}
-  - imageName: group-2
-    prefab: {fileID: 8127396611883947309, guid: 9b71e6b1c088bd64cab790a257d50a88,
-      type: 3}
 --- !u!114 &2004885411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8658,6 +8648,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4364852688310033}
+  - component: {fileID: 114913344448044410}
   - component: {fileID: 114913344448044409}
   - component: {fileID: 114416091072354483}
   - component: {fileID: 74290580}
@@ -8892,7 +8883,19 @@ MonoBehaviour:
   Event: {fileID: 11400000, guid: 74522e4d33d3b7b42ad836dec035dfb9, type: 2}
   Response:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ARImageTracker_SingleScan, Assembly-CSharp
+        m_MethodName: StartImageTracking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &114779364464053088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8939,6 +8942,24 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &114913344448044410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744404648188791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca85f0e96b42d040be3deb1453263dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackedImageManager: {fileID: 2004885411}
+  OnImageFoundGameEvent: {fileID: 11400000, guid: 1629bf95903f30e40929b0dd542d7c8b,
+    type: 2}
+  spawnedObject: {fileID: 0}
+  spawnedObjectPrefab: {fileID: 8127396611883947309, guid: c2612ea7365466e4d97629a0b4860375,
+    type: 3}
 --- !u!124 &124233919379234832
 Behaviour:
   m_ObjectHideFlags: 0

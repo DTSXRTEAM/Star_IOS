@@ -1,5 +1,6 @@
 using Cadpeople.Events;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
@@ -11,13 +12,12 @@ public class ARImageRescanController : MonoBehaviour
 
     public GameEvent OnImageFoundGameEvent;
 
-    [Tooltip("do not assign")]
-    public GameObject spawnedObject;
-
     public GameObject spawnedObjectPrefab;
 
-    [Header("UI")]
-    //public GameObject rescanPopup;
+    public GameObject AROriginModel;
+
+    [Header("Do not assign")]
+    public GameObject spawnedObject;
 
     // Internal state
     private HashSet<ARTrackedImage> trackedSet = new();
@@ -73,6 +73,8 @@ public class ARImageRescanController : MonoBehaviour
             img.transform
         );
 
+        SetArOriginPosition(spawnedObject.transform.position, spawnedObject.transform.rotation);
+
     }
 
 
@@ -98,6 +100,15 @@ public class ARImageRescanController : MonoBehaviour
         // Allow scanning again
         canScan = true;
 
+        SetArOriginPosition(Vector3.zero, quaternion.identity);
+    }
 
+    public void SetArOriginPosition(Vector3 position, quaternion rotation)
+    {
+        if (AROriginModel != null)
+        {
+            AROriginModel.transform.position = position;
+            AROriginModel.transform.rotation = rotation;
+        }
     }
 }

@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 using Newtonsoft.Json;
 using SimulatorInterface;
 using System.Net;
-using UnityEditor.Purchasing;
+//using UnityEditor.Purchasing;
 
 public class FlowManager : CPEventListener
 {

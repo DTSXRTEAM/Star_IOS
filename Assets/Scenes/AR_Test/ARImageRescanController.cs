@@ -9,6 +9,7 @@ public class ARImageRescanController : MonoBehaviour
 {
     [Header("AR")]
     public ARTrackedImageManager trackedImageManager;
+    public ARAnchorManager anchorManager; // NEW
 
     public GameEvent OnImageFoundGameEvent;
 
@@ -22,6 +23,8 @@ public class ARImageRescanController : MonoBehaviour
     // Internal state
     private HashSet<ARTrackedImage> trackedSet = new();
     private bool canScan = true;
+
+    private ARAnchor imageAnchor; // NEW
 
     void Start()
     {
@@ -60,22 +63,53 @@ public class ARImageRescanController : MonoBehaviour
         if (!canScan)
             return;
 
-        canScan = false; // lock scanning
+        canScan = false;
 
         string imageName = img.referenceImage.name;
         Debug.Log("Image Found: " + imageName);
         OnImageFoundGameEvent?.Raise(imageName);
 
-        spawnedObject = Instantiate(
-            spawnedObjectPrefab,
-            img.transform.position,
-            img.transform.rotation,
-            img.transform
+        // ---- CREATE ANCHOR AT IMAGE POSE ----
+        Pose anchorPose = new Pose(img.transform.position,Quaternion.Euler(0, img.transform.eulerAngles.y, 0)
+);
+
+        // Optional: stabilize floor images (lock tilt)
+        anchorPose.rotation = Quaternion.Euler(
+            0,
+            anchorPose.rotation.eulerAngles.y,
+            0
         );
 
-        SetArOriginPosition(spawnedObject.transform.position, spawnedObject.transform.rotation);
+        GameObject anchorGO = new GameObject("ImageAnchor");
+        anchorGO.transform.SetPositionAndRotation(
+            anchorPose.position,
+            anchorPose.rotation
+        );
 
+        imageAnchor = anchorGO.AddComponent<ARAnchor>();
+
+        if (imageAnchor == null)
+        {
+            Debug.LogError("Failed to create anchor");
+            return;
+        }
+
+        // ---- SPAWN MODEL ON ANCHOR (NOT IMAGE) ----
+        spawnedObject = Instantiate(
+            spawnedObjectPrefab,
+            imageAnchor.transform
+        );
+
+        // Keep your existing AR Origin logic
+        SetArOriginPosition(
+            imageAnchor.transform.position,
+            imageAnchor.transform.rotation
+        );
+
+        // OPTIONAL: stop further image tracking
+        trackedImageManager.enabled = false;
     }
+
 
 
     // -----------------------------
@@ -92,18 +126,22 @@ public class ARImageRescanController : MonoBehaviour
             spawnedObject = null;
         }
 
-        //rescanPopup.SetActive(false);
+        if (imageAnchor != null)
+        {
+            Destroy(imageAnchor.gameObject);
+            imageAnchor = null;
+        }
 
-        // Clear tracked images
         trackedSet.Clear();
-
-        // Allow scanning again
         canScan = true;
 
-        SetArOriginPosition(Vector3.zero, quaternion.identity);
+        trackedImageManager.enabled = true; // re-enable tracking
+
+        SetArOriginPosition(Vector3.zero, Quaternion.identity);
     }
 
-    public void SetArOriginPosition(Vector3 position, quaternion rotation)
+
+    public void SetArOriginPosition(Vector3 position, Quaternion rotation)
     {
         if (AROriginModel != null)
         {

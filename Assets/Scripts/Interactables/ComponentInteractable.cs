@@ -11,6 +11,7 @@ public class ComponentInteractable : Interactable
 	{
 		//logEvent?.Raise(name + " was clicked");
 		buttonClickedEvent?.Raise(name);
-	}
+		Debug.Log(name + " was clicked");
+    }
 }
 

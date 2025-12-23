@@ -4707,7 +4707,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 241.09998, y: -77.430176}
+  m_AnchoredPosition: {x: 241.09961, y: -77.430176}
   m_SizeDelta: {x: 155.83899, y: 154.86096}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1247196606
@@ -6050,6 +6050,7 @@ MonoBehaviour:
     type: 2}
   highlightComponentEvent: {fileID: 11400000, guid: e45d19eb5bc33204f882b50c995101b9,
     type: 2}
+  arCamera: {fileID: 1222353885}
 --- !u!114 &1519013633
 MonoBehaviour:
   m_ObjectHideFlags: 0

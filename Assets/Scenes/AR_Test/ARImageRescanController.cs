@@ -10,6 +10,8 @@ public class ARImageRescanController : MonoBehaviour
     [Header("AR")]
     public ARTrackedImageManager trackedImageManager;
 
+    public ARAnchor anchor;
+
     public GameEvent OnImageFoundGameEvent;
 
     public GameObject spawnedObjectPrefab;
@@ -66,15 +68,23 @@ public class ARImageRescanController : MonoBehaviour
         Debug.Log("Image Found: " + imageName);
         OnImageFoundGameEvent?.Raise(imageName);
 
+        //creating world anchor at image position
+        anchor.transform.position = img.transform.position;
+        //anchor.transform.rotation = img.transform.rotation;
+
+        float yRotation = img.transform.eulerAngles.y;
+
+        anchor.transform.rotation = Quaternion.Euler(0, yRotation, 0);
+        
+
         spawnedObject = Instantiate(
             spawnedObjectPrefab,
-            img.transform.position,
-            img.transform.rotation,
-            img.transform
+            anchor.transform.position,
+            anchor.transform.rotation,
+            anchor.transform
         );
 
         SetArOriginPosition(spawnedObject.transform.position, spawnedObject.transform.rotation);
-
     }
 
 
@@ -85,7 +95,7 @@ public class ARImageRescanController : MonoBehaviour
     public void OnRescanPressed()
     {
         Debug.Log("Rescan pressed");
-
+        
         if (spawnedObject != null)
         {
             Destroy(spawnedObject);
@@ -99,6 +109,8 @@ public class ARImageRescanController : MonoBehaviour
 
         // Allow scanning again
         canScan = true;
+
+        
 
         SetArOriginPosition(Vector3.zero, quaternion.identity);
     }

@@ -26,6 +26,13 @@ public class HMIController : ToolDialogController
 
 	protected void Start()
 	{
+		StartCoroutine(RefreshWebView());
+	}
+
+
+	private IEnumerator RefreshWebView()
+	{
+		yield return new WaitForSeconds(2f);
 		if (uniWebViewScript != null)
 		{
 			HMIUrl = NetworkManager.Instance.ServerUrl + "/plugins/service-panel";
